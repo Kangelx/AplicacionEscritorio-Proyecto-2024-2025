@@ -25,6 +25,13 @@ namespace AplicacionIncidenciasProyecto.ControlVariables
         Cerrada
     }
 
+    enum TipoEquipo
+    {
+        Ordenador,
+        Pantalla,
+        Proyector
+    }
+
     enum Perfil
     {
         Administrador,

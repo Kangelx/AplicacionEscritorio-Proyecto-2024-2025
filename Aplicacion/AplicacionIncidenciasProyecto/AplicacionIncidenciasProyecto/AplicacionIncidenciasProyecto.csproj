@@ -46,7 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases pojo\Aulas.cs" />
+    <Compile Include="Clases pojo\Comentarios.cs" />
+    <Compile Include="Clases pojo\Departamentos.cs" />
+    <Compile Include="Clases pojo\Equipos.cs" />
+    <Compile Include="Clases pojo\IncidenciasSubtipos.cs" />
     <Compile Include="Clases pojo\Incidencias.cs" />
+    <Compile Include="Clases pojo\Perfiles.cs" />
+    <Compile Include="Clases pojo\Personal.cs" />
     <Compile Include="ControlVariables\Enumerados.cs" />
     <Compile Include="Interfaces\Repositorio.cs" />
     <Compile Include="Form1.cs">
