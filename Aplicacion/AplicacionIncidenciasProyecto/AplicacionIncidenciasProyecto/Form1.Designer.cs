@@ -89,6 +89,7 @@
             this.btnCerrar.Size = new System.Drawing.Size(34, 31);
             this.btnCerrar.TabIndex = 6;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // button1
             // 
@@ -169,7 +170,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
-            
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel_lateral.ResumeLayout(false);

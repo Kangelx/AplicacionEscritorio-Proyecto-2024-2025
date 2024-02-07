@@ -27,7 +27,7 @@ namespace AplicacionIncidenciasProyecto
             // Espaciado entre los cuadros de las aulas
             int spacing = 20;
             // Posición inicial de los cuadros de las aulas
-            Point startPosition = new Point(201, 68);
+            Point startPosition = new Point(201, 91);
 
             // Iterar sobre la lista de nombres de aulas
             foreach (string nombreAula in nombresAulas)
@@ -63,6 +63,16 @@ namespace AplicacionIncidenciasProyecto
                 }
             }
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
