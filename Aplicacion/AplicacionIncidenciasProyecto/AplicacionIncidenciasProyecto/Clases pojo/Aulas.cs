@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,22 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
 
         public List<Aulas> listar()
         {
-            throw new NotImplementedException();
+            using (var httpClient = new HttpClient())
+            {
+                try
+                {
+                    string apiUrl = "http://localhost:4000/aula";
+
+                    // Realiza la solicitud GET
+                    HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
+                    
+                }catch(Exception ex)
+                {
+                    Console.WriteLine($"Error: {ex.Message}");
+                }
+
+
+            }
         }
 
         public Aulas porId(int id)
