@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AplicacionIncidenciasProyecto.Clases_pojo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,7 @@ namespace AplicacionIncidenciasProyecto
         {
             InitializeComponent();
             CrearCuadrosAulas();
-
+            prueba();
         }
 
 
@@ -58,6 +59,11 @@ namespace AplicacionIncidenciasProyecto
 
         }
 
+        public void prueba()
+        {
+            Aulas aula = new Aulas();
+            aula.listar();
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 

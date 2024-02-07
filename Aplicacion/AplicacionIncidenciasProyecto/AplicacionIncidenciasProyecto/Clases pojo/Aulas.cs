@@ -4,10 +4,11 @@ using System.Net.Http;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 namespace AplicacionIncidenciasProyecto.Clases_pojo
 {
-    internal class Aulas : Repositorio<Aulas>
+    internal class Aulas
     {
         public int num { get; set;}
         public string codigo { get; set;}
@@ -24,24 +25,38 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
             this.planta = planta;
         }
 
-        public List<Aulas> listar()
+        public async Task<JArray> listar()
         {
+            JArray jsonArray = new JArray();
             using (var httpClient = new HttpClient())
             {
                 try
                 {
                     string apiUrl = "http://localhost:4000/aula";
 
-                    // Realiza la solicitud GET
-                    HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
-                    
-                }catch(Exception ex)
+                    var response = await httpClient.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonString = await response.Content.ReadAsStringAsync();
+                        jsonArray = JArray.Parse(jsonString);
+
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Error en la solicitud: {response.StatusCode}"); 
+                    }
+                }
+                catch (Exception ex)
                 {
                     Console.WriteLine($"Error: {ex.Message}");
                 }
 
 
             }
+            return jsonArray;
+ 
+
         }
 
         public Aulas porId(int id)
