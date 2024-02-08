@@ -10,16 +10,13 @@ using System.Windows.Forms;
 
 namespace AplicacionIncidenciasProyecto
 {
-    public partial class Form1 : Form
+    public partial class FormularioAdministrador : Form
     {
-        public Form1()
+        public FormularioAdministrador()
         {
             InitializeComponent();
             CrearCuadrosAulas();
-
         }
-
-
         private void CrearCuadrosAulas()
         {
             List<string> nombresAulas = new List<string> { "Aula 101", "Aula 102", "Aula 103", "Aula 104", "Aula 104", "Aula 104", "Aula 104", "Aula 104", "Aula 104" };
@@ -39,7 +36,7 @@ namespace AplicacionIncidenciasProyecto
                 // Definir la posición del PictureBox
                 pictureBox.Location = startPosition;
                 // Asignar un color de fondo para representar el aula
-                pictureBox.BackColor = Color.LightBlue;
+                pictureBox.BackColor = Color.Beige;
                 // Añadir el nombre del aula como texto al PictureBox
                 pictureBox.Text = nombreAula;
                 // Añadir un borde al PictureBox para mejorar la visualización
@@ -65,7 +62,7 @@ namespace AplicacionIncidenciasProyecto
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FormularioAdministrador_Load(object sender, EventArgs e)
         {
 
         }
