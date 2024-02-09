@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,18 +55,30 @@
     <Compile Include="Clases pojo\Incidencias.cs" />
     <Compile Include="Clases pojo\Perfiles.cs" />
     <Compile Include="Clases pojo\Personal.cs" />
-    <Compile Include="ControlVariables\Enumerados.cs" />
-    <Compile Include="AddIncidenciaProfesor.cs">
+    <Compile Include="ComentarIncidenciaProfesor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddIncidenciaProfesor.Designer.cs">
-      <DependentUpon>AddIncidenciaProfesor.cs</DependentUpon>
+    <Compile Include="ComentarIncidenciaProfesor.Designer.cs">
+      <DependentUpon>ComentarIncidenciaProfesor.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlVariables\Enumerados.cs" />
     <Compile Include="FormularioAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormularioAdministrador.Designer.cs">
       <DependentUpon>FormularioAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarIncidenciasProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionarIncidenciasProfesor.Designer.cs">
+      <DependentUpon>GestionarIncidenciasProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncidenciasProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncidenciasProfesor.Designer.cs">
+      <DependentUpon>IncidenciasProfesor.cs</DependentUpon>
     </Compile>
     <Compile Include="inicioSesionAdmin.cs">
       <SubType>Form</SubType>
@@ -80,11 +93,23 @@
     <Compile Include="FormularioProfesor.Designer.cs">
       <DependentUpon>FormularioProfesor.cs</DependentUpon>
     </Compile>
+    <Compile Include="NotificacionesProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotificacionesProfesor.Designer.cs">
+      <DependentUpon>NotificacionesProfesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ControlVariables\VerificaciónEntradaDatos.cs" />
-    <EmbeddedResource Include="AddIncidenciaProfesor.resx">
-      <DependentUpon>AddIncidenciaProfesor.cs</DependentUpon>
+    <Compile Include="VerIncidenciaProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerIncidenciaProfesor.Designer.cs">
+      <DependentUpon>VerIncidenciaProfesor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ComentarIncidenciaProfesor.resx">
+      <DependentUpon>ComentarIncidenciaProfesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioAdministrador.resx">
       <DependentUpon>FormularioAdministrador.cs</DependentUpon>
@@ -92,8 +117,17 @@
     <EmbeddedResource Include="FormularioProfesor.resx">
       <DependentUpon>FormularioProfesor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionarIncidenciasProfesor.resx">
+      <DependentUpon>GestionarIncidenciasProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncidenciasProfesor.resx">
+      <DependentUpon>IncidenciasProfesor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="inicioSesionAdmin.resx">
       <DependentUpon>inicioSesionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotificacionesProfesor.resx">
+      <DependentUpon>NotificacionesProfesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -103,7 +137,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VerIncidenciaProfesor.resx">
+      <DependentUpon>VerIncidenciaProfesor.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -116,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-file-icon-1453-thumb.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

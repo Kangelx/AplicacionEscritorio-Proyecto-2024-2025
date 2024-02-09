@@ -31,29 +31,21 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioProfesor));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.imgListIconos = new System.Windows.Forms.ImageList(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.lblSuperior = new System.Windows.Forms.Label();
             this.panel_lateral = new System.Windows.Forms.Panel();
             this.btnAdmin = new System.Windows.Forms.Button();
             this.btnNotificaciones = new System.Windows.Forms.Button();
             this.btnIncidencias = new System.Windows.Forms.Button();
             this.btnGestionar = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtUser = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.anel_superiorIzq = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.LogosCuadrados = new System.Windows.Forms.ImageList(this.components);
             this.lblEmpresa = new System.Windows.Forms.Label();
             this.grpIncidencia = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelRutaArchivo = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtDesc = new System.Windows.Forms.TextBox();
@@ -64,13 +56,23 @@
             this.lblTipo = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel_lateral.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.anel_superiorIzq.SuspendLayout();
             this.grpIncidencia.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -89,18 +91,6 @@
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button3
-            // 
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button3.ImageIndex = 7;
-            this.button3.ImageList = this.imgListIconos;
-            this.button3.Location = new System.Drawing.Point(790, 16);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(34, 31);
-            this.button3.TabIndex = 9;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // imgListIconos
             // 
             this.imgListIconos.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgListIconos.ImageStream")));
@@ -114,28 +104,6 @@
             this.imgListIconos.Images.SetKeyName(6, "volver.png");
             this.imgListIconos.Images.SetKeyName(7, "admin.png");
             // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.ImageIndex = 6;
-            this.button1.ImageList = this.imgListIconos;
-            this.button1.Location = new System.Drawing.Point(830, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(34, 31);
-            this.button1.TabIndex = 8;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button2.ImageIndex = 3;
-            this.button2.ImageList = this.imgListIconos;
-            this.button2.Location = new System.Drawing.Point(723, 16);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(34, 31);
-            this.button2.TabIndex = 7;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // txtBuscar
             // 
             this.txtBuscar.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -146,18 +114,6 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(166, 18);
             this.txtBuscar.TabIndex = 4;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnCerrar.ImageIndex = 0;
-            this.btnCerrar.ImageList = this.imgListIconos;
-            this.btnCerrar.Location = new System.Drawing.Point(870, 16);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(34, 31);
-            this.btnCerrar.TabIndex = 6;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // lblSuperior
             // 
@@ -203,6 +159,7 @@
             this.btnNotificaciones.TabIndex = 15;
             this.btnNotificaciones.Text = "Notificaciones";
             this.btnNotificaciones.UseVisualStyleBackColor = true;
+            this.btnNotificaciones.Click += new System.EventHandler(this.btnNotificaciones_Click);
             // 
             // btnIncidencias
             // 
@@ -212,6 +169,7 @@
             this.btnIncidencias.TabIndex = 13;
             this.btnIncidencias.Text = "Mis Incidencias";
             this.btnIncidencias.UseVisualStyleBackColor = true;
+            this.btnIncidencias.Click += new System.EventHandler(this.btnIncidencias_Click);
             // 
             // btnGestionar
             // 
@@ -221,34 +179,7 @@
             this.btnGestionar.TabIndex = 12;
             this.btnGestionar.Text = "Gestionar Incidencias";
             this.btnGestionar.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Controls.Add(this.txtUser);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(-2, 78);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(154, 92);
-            this.panel3.TabIndex = 1;
-            // 
-            // txtUser
-            // 
-            this.txtUser.Location = new System.Drawing.Point(40, 63);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.ReadOnly = true;
-            this.txtUser.Size = new System.Drawing.Size(92, 20);
-            this.txtUser.TabIndex = 15;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ImageIndex = 5;
-            this.label3.ImageList = this.imgListIconos;
-            this.label3.Location = new System.Drawing.Point(5, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 23);
-            this.label3.TabIndex = 14;
+            this.btnGestionar.Click += new System.EventHandler(this.btnGestionar_Click);
             // 
             // anel_superiorIzq
             // 
@@ -260,15 +191,6 @@
             this.anel_superiorIzq.Name = "anel_superiorIzq";
             this.anel_superiorIzq.Size = new System.Drawing.Size(150, 79);
             this.anel_superiorIzq.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.ImageIndex = 0;
-            this.label1.ImageList = this.LogosCuadrados;
-            this.label1.Location = new System.Drawing.Point(3, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 75);
-            this.label1.TabIndex = 4;
             // 
             // LogosCuadrados
             // 
@@ -287,7 +209,7 @@
             // 
             // grpIncidencia
             // 
-            this.grpIncidencia.Controls.Add(this.button4);
+            this.grpIncidencia.BackColor = System.Drawing.SystemColors.Control;
             this.grpIncidencia.Controls.Add(this.groupBox1);
             this.grpIncidencia.Controls.Add(this.textBox2);
             this.grpIncidencia.Controls.Add(this.label6);
@@ -306,39 +228,40 @@
             this.grpIncidencia.TabIndex = 33;
             this.grpIncidencia.TabStop = false;
             this.grpIncidencia.Text = "Crear Incidencias";
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button4.Location = new System.Drawing.Point(441, 368);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 26;
-            this.button4.Text = "Añadir";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.grpIncidencia.Enter += new System.EventHandler(this.grpIncidencia_Enter);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.labelRutaArchivo);
+            this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(114, 226);
+            this.groupBox1.Location = new System.Drawing.Point(114, 292);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(413, 126);
+            this.groupBox1.Size = new System.Drawing.Size(413, 72);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             // 
-            // pictureBox1
+            // labelRutaArchivo
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(72, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Padding = new System.Windows.Forms.Padding(10);
-            this.pictureBox1.Size = new System.Drawing.Size(260, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.labelRutaArchivo.AutoSize = true;
+            this.labelRutaArchivo.Location = new System.Drawing.Point(127, 31);
+            this.labelRutaArchivo.Name = "labelRutaArchivo";
+            this.labelRutaArchivo.Size = new System.Drawing.Size(0, 15);
+            this.labelRutaArchivo.TabIndex = 27;
+            // 
+            // button4
+            // 
+            this.button4.AutoEllipsis = true;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.button4.Location = new System.Drawing.Point(17, 27);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(97, 23);
+            this.button4.TabIndex = 26;
+            this.button4.Text = "Añadir archivo";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox2
             // 
@@ -365,7 +288,7 @@
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDesc.Size = new System.Drawing.Size(413, 55);
+            this.txtDesc.Size = new System.Drawing.Size(413, 121);
             this.txtDesc.TabIndex = 22;
             // 
             // label5
@@ -447,28 +370,138 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Usuario: ";
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(827, 419);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(98, 33);
+            this.btnAdd.TabIndex = 35;
+            this.btnAdd.Text = "Añadir";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(827, 480);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(98, 33);
+            this.button6.TabIndex = 36;
+            this.button6.Text = "Cancelar";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // button3
+            // 
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button3.ImageIndex = 7;
+            this.button3.ImageList = this.imgListIconos;
+            this.button3.Location = new System.Drawing.Point(790, 16);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(34, 31);
+            this.button3.TabIndex = 9;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.ImageIndex = 6;
+            this.button1.ImageList = this.imgListIconos;
+            this.button1.Location = new System.Drawing.Point(830, 16);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(34, 31);
+            this.button1.TabIndex = 8;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button2.ImageIndex = 3;
+            this.button2.ImageList = this.imgListIconos;
+            this.button2.Location = new System.Drawing.Point(723, 16);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(34, 31);
+            this.button2.TabIndex = 7;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnCerrar.ImageIndex = 0;
+            this.btnCerrar.ImageList = this.imgListIconos;
+            this.btnCerrar.Location = new System.Drawing.Point(870, 16);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(34, 31);
+            this.btnCerrar.TabIndex = 6;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.Controls.Add(this.txtUser);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Location = new System.Drawing.Point(-2, 78);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(154, 92);
+            this.panel3.TabIndex = 1;
+            // 
+            // txtUser
+            // 
+            this.txtUser.Location = new System.Drawing.Point(40, 63);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.ReadOnly = true;
+            this.txtUser.Size = new System.Drawing.Size(92, 20);
+            this.txtUser.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ImageIndex = 5;
+            this.label3.ImageList = this.imgListIconos;
+            this.label3.Location = new System.Drawing.Point(5, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(28, 23);
+            this.label3.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.ImageIndex = 0;
+            this.label1.ImageList = this.LogosCuadrados;
+            this.label1.Location = new System.Drawing.Point(3, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 75);
+            this.label1.TabIndex = 4;
+            // 
             // FormularioProfesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 577);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.grpIncidencia);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_lateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormularioProfesor";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormularioProfesor_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel_lateral.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.anel_superiorIzq.ResumeLayout(false);
             this.grpIncidencia.ResumeLayout(false);
             this.grpIncidencia.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -499,7 +532,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtDesc;
@@ -509,6 +541,10 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label labelRutaArchivo;
     }
 }
 

@@ -12,17 +12,17 @@ namespace AplicacionIncidenciasProyecto
 {
     public partial class FormularioProfesor : Form
     {
-
+        private string rutaArchivo;
         public FormularioProfesor()
         {
             InitializeComponent();
-
+           // this.Load += Form1_Load;
         }
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -49,26 +49,48 @@ namespace AplicacionIncidenciasProyecto
 
         private void button4_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
 
-            // Filtro para mostrar solo archivos de imagen
-            openFileDialog1.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.gif";
+            // Configuraciones del OpenFileDialog
+            openFileDialog.InitialDirectory = "C:\\"; // Directorio inicial
+            openFileDialog.Filter = "Archivos de imagen|*.jpg;*.jpeg;*.png;*.gif"; // Filtros para tipos de archivos permitidos
 
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                // Obtener la ruta del archivo seleccionado
-                string rutaArchivo = openFileDialog1.FileName;
+                rutaArchivo = openFileDialog.FileName;
+                labelRutaArchivo.Text = rutaArchivo; // Actualiza el texto del Label con la ruta seleccionada
+            }
+        }
 
-                try
-                {
-                    // Cargar la imagen en el PictureBox
-                    Image imagenSeleccionada = Image.FromFile(rutaArchivo);
-                    pictureBox1.Image = imagenSeleccionada;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al cargar la imagen: " + ex.Message);
-                }
+        private void btnGestionar_Click(object sender, EventArgs e)
+        {
+            GestionarIncidenciasProfesor formGest = new GestionarIncidenciasProfesor(this);
+            formGest.Owner = this;
+            formGest.Show();
+            this.Visible = false;
+        }
+
+        private void grpIncidencia_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIncidencias_Click(object sender, EventArgs e)
+        {
+            IncidenciasProfesor formIncidenias = new IncidenciasProfesor();
+            formIncidenias.Show();
+        }
+
+        private void btnNotificaciones_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormularioProfesor_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
             }
         }
     }
