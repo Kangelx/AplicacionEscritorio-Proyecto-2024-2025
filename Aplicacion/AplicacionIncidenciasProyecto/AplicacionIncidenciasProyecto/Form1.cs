@@ -1,4 +1,5 @@
-﻿using AplicacionIncidenciasProyecto.Clases_pojo;
+﻿using AplicacionIncidenciasProyecto.ApiController;
+using AplicacionIncidenciasProyecto.Clases_pojo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +14,12 @@ namespace AplicacionIncidenciasProyecto
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
             CrearCuadrosAulas();
-            prueba();
+            pruebaAsync();
         }
 
 
@@ -59,10 +61,26 @@ namespace AplicacionIncidenciasProyecto
 
         }
 
-        public void prueba()
+        public async Task pruebaAsync()
         {
             Aulas aula = new Aulas();
-            aula.listar();
+            aula.num = 15;
+            aula.codigo = "12345";
+            aula.descripcion = "API";
+            aula.planta = 1;
+            var apiService = new ApiService<Aulas>();
+
+
+            IEnumerable<Aulas> aulaCreada = await apiService.GetAll();
+            foreach(Aulas aulas in aulaCreada)
+            {
+                Console.WriteLine(aulas.num);
+                Console.WriteLine(aulas.descripcion);
+                Console.WriteLine(aulas.planta);
+                Console.WriteLine(aulas.codigo);
+
+            }
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AplicacionIncidenciasProyecto.Clases_pojo
 {
-    internal class Personal : Repositorio<Personal>
+    internal class Personal
     {
         public int id { get; set; }
         public string dni { get; set; }

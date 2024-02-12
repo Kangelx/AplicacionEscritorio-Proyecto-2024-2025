@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiController\ApiService.cs" />
     <Compile Include="Clases pojo\Aulas.cs" />
     <Compile Include="Clases pojo\Comentarios.cs" />
     <Compile Include="Clases pojo\Departamentos.cs" />
@@ -64,7 +65,7 @@
     <Compile Include="crearIncidencia.Designer.cs">
       <DependentUpon>crearIncidencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\Repositorio.cs" />
+    <Compile Include="ApiController\IApiService.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

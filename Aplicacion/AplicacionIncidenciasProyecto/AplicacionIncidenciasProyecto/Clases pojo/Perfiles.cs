@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AplicacionIncidenciasProyecto.Clases_pojo
 {
-    internal class Perfiles : Repositorio<Perfiles>
+    internal class Perfiles
     {
         public int personalId { get; set; }
         public string dominio { get; set; }

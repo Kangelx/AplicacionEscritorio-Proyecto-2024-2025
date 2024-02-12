@@ -37,4 +37,12 @@ namespace AplicacionIncidenciasProyecto.ControlVariables
         Administrador,
         Profesor
     }
+
+    enum Prioridad
+    {
+        baja,
+        media,
+        alta,
+        critica
+    }
 }

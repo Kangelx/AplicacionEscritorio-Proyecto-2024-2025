@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AplicacionIncidenciasProyecto.Clases_pojo
 {
-    internal class Equipos : Repositorio<Equipos>
+    internal class Equipos
     {
         public int id { get; set; }
         public TipoEquipo tipoEquipo { get; set; }
@@ -36,24 +36,5 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
             this.puesto = puesto;
         }
 
-        public void eliminar(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void guardar(Equipos t)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Equipos> listar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Equipos porId(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

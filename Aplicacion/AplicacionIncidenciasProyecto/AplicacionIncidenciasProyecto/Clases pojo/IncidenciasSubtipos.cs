@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace AplicacionIncidenciasProyecto.Clases_pojo
 {
-    internal class IncidenciasSubtipos : Repositorio<IncidenciasSubtipos>
+    internal class IncidenciasSubtipos
     {
         public int id { get; set; }
         public TipoIncidencia tipo { get; set; }
-        public string nombre { get; set; }
-        public string subtipo { get; set; } //los subsubtipos son solo para pc's y tienen unos valores fijos?
+        public string subtipo_nombre { get; set; }
+        public string sub_subtipo { get; set; } 
 
         public IncidenciasSubtipos()
         {
@@ -23,8 +23,8 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
         {
             this.id = id;
             this.tipo = tipo;
-            this.nombre = nombre;
-            this.subtipo = subtipo;
+            this.subtipo_nombre = nombre;
+            this.sub_subtipo = subtipo;
         }
 
         public void eliminar(int id)

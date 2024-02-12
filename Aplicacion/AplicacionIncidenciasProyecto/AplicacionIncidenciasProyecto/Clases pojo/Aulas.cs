@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace AplicacionIncidenciasProyecto.Clases_pojo
 {
@@ -25,53 +26,5 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
             this.planta = planta;
         }
 
-        public async Task<JArray> listar()
-        {
-            JArray jsonArray = new JArray();
-            using (var httpClient = new HttpClient())
-            {
-                try
-                {
-                    string apiUrl = "http://localhost:4000/aula";
-
-                    var response = await httpClient.GetAsync(apiUrl);
-
-                    if (response.IsSuccessStatusCode)
-                    {
-                        var jsonString = await response.Content.ReadAsStringAsync();
-                        jsonArray = JArray.Parse(jsonString);
-
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Error en la solicitud: {response.StatusCode}"); 
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Error: {ex.Message}");
-                }
-
-
-            }
-            return jsonArray;
- 
-
-        }
-
-        public Aulas porId(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void guardar(Aulas t)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void eliminar(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace AplicacionIncidenciasProyecto.Clases_pojo
 {
-    internal class Comentarios : Repositorio<Comentarios>
+    internal class Comentarios
     {
         public int id { get; set; }
         public string texto { get; set; }
-        public DateTime fechaHora { get; set; }
+        public DateTime fechahora { get; set; }
         public int incidenciaNum { get; set; }
         public int personalId { get; set; }
         public string adjuntoUrl { get; set; }
@@ -21,30 +21,10 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
         {
             this.id = id;
             this.texto = texto;
-            this.fechaHora = fechaHora;
+            this.fechahora = fechaHora;
             this.incidenciaNum = incidenciaNum;
             this.personalId = personalId;
             this.adjuntoUrl = adjuntoUrl;
-        }
-
-        public List<Comentarios> listar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Comentarios porId(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void guardar(Comentarios t)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void eliminar(int id)
-        {
-            throw new NotImplementedException();
         }
     }
 }
