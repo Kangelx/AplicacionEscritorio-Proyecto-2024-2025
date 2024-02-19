@@ -14,7 +14,7 @@ namespace AplicacionIncidenciasProyecto.ApiController
         private readonly HttpClient _httpClient;
         private readonly string _baseUrl;
 
-        private static readonly Dictionary<Type, string> BaseUrlMappings = new Dictionary<Type, string>
+        private static readonly Dictionary<Type, string> BaseUrlMapping = new Dictionary<Type, string>
         {
             { typeof(Aulas), "http://localhost:4001/aula" },
             { typeof(Comentarios), "http://localhost:4001/comentario" },
@@ -37,7 +37,7 @@ namespace AplicacionIncidenciasProyecto.ApiController
             Type typeOfT = typeof(T);
 
 
-            if (BaseUrlMappings.TryGetValue(typeOfT, out string baseUrl))
+            if (BaseUrlMapping.TryGetValue(typeOfT, out string baseUrl))
             {
                 return baseUrl;
             }

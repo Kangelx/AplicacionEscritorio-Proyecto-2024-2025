@@ -20,6 +20,7 @@ namespace AplicacionIncidenciasProyecto
             InitializeComponent();
             CrearCuadrosAulas();
             pruebaAsync();
+            Console.WriteLine("ejecucion");
         }
 
 
@@ -70,10 +71,11 @@ namespace AplicacionIncidenciasProyecto
             aula.planta = 1;
             var apiService = new ApiService<Aulas>();
 
-
+            Console.WriteLine("peticion api");
             IEnumerable<Aulas> aulaCreada = await apiService.GetAll();
             foreach(Aulas aulas in aulaCreada)
             {
+
                 Console.WriteLine(aulas.num);
                 Console.WriteLine(aulas.descripcion);
                 Console.WriteLine(aulas.planta);
