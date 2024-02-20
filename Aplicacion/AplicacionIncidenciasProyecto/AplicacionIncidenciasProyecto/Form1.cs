@@ -21,6 +21,7 @@ namespace AplicacionIncidenciasProyecto
             InitializeComponent();
             CrearCuadrosAulas();
             pruebaAsync();
+            Console.WriteLine("ejecucion");
         }
 
 
