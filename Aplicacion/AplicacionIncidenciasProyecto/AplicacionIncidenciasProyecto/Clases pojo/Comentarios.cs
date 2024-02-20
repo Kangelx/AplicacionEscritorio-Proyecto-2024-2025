@@ -11,13 +11,13 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
         public int id { get; set; }
         public string texto { get; set; }
         public DateTime fechahora { get; set; }
-        public int incidenciaNum { get; set; }
-        public int personalId { get; set; }
+        public Incidencias incidenciaNum { get; set; }
+        public Personal personalId { get; set; }
         public string adjuntoUrl { get; set; }
 
         public Comentarios() { }
 
-        public Comentarios(int id, string texto, DateTime fechaHora, int incidenciaNum, int personalId, string adjuntoUrl)
+        public Comentarios(int id, string texto, DateTime fechaHora, Incidencias incidenciaNum, Personal personalId, string adjuntoUrl)
         {
             this.id = id;
             this.texto = texto;

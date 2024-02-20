@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AplicacionIncidenciasProyecto.ApiController
 {
-    internal class ApiService<T>
+    internal class ApiService<T> :IApiService<T>
     {
         private readonly HttpClient _httpClient;
         private readonly string _baseUrl;
@@ -50,44 +50,150 @@ namespace AplicacionIncidenciasProyecto.ApiController
 
         public async Task<T> GetById(int id)
         {
-            var response = await _httpClient.GetAsync($"{_baseUrl}/{id}");
-            response.EnsureSuccessStatusCode(); // Lanza una excepción si la solicitud no fue exitosa
-            var content = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<T>(content);
+            try { 
+                var response = await _httpClient.GetAsync($"{_baseUrl}/{id}");
+                response.EnsureSuccessStatusCode(); // Lanza una excepción si la solicitud no fue exitosa
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<T>(content);
+            }
+            catch (JsonSerializationException ex)
+            {
+                // Manejar la excepción
+                Console.WriteLine("Error de deserialización JSON:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("StackTrace:");
+                Console.WriteLine(ex.StackTrace);
+                throw; // Relanza la excepción para que pueda ser manejada más arriba si es necesario
+            }
+            catch (Exception ex)
+            {
+                // Manejar otras excepciones que puedan ocurrir
+                Console.WriteLine("Error general:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("StackTrace:");
+                Console.WriteLine(ex.StackTrace);
+                throw; // Relanza la excepción para que pueda ser manejada más arriba si es necesario
+            }
         }
 
         public async Task<IEnumerable<T>> GetAll()
         {
-            var response = await _httpClient.GetAsync(_baseUrl);
-            response.EnsureSuccessStatusCode();
-            var content = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<IEnumerable<T>>(content);
+            try
+            {
+                var response = await _httpClient.GetAsync(_baseUrl);
+                response.EnsureSuccessStatusCode();
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<IEnumerable<T>>(content);
+            }
+            catch (JsonSerializationException ex)
+            {
+                // Manejar la excepción
+                Console.WriteLine("Error de deserialización JSON:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("StackTrace:");
+                Console.WriteLine(ex.StackTrace);
+                throw; // Relanza la excepción para que pueda ser manejada más arriba si es necesario
+            }
+            catch (Exception ex)
+            {
+                // Manejar otras excepciones que puedan ocurrir
+                Console.WriteLine("Error general:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("StackTrace:");
+                Console.WriteLine(ex.StackTrace);
+                throw; // Relanza la excepción para que pueda ser manejada más arriba si es necesario
+            }
         }
 
-        public async Task<T> Create(T item)
+        public async Task<string> Create(T item)
         {
+            try { 
             var json = JsonConvert.SerializeObject(item);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await _httpClient.PostAsync(_baseUrl, content);
             response.EnsureSuccessStatusCode();
             var responseContent = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<T>(responseContent);
+            return JsonConvert.DeserializeObject<string>(responseContent);
+            }
+            catch (JsonSerializationException ex)
+            {
+                // Manejar la excepción
+                Console.WriteLine("Error de deserialización JSON:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("StackTrace:");
+                Console.WriteLine(ex.StackTrace);
+                throw; // Relanza la excepción para que pueda ser manejada más arriba si es necesario
+            }
+            catch (Exception ex)
+            {
+                // Manejar otras excepciones que puedan ocurrir
+                Console.WriteLine("Error general:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("StackTrace:");
+                Console.WriteLine(ex.StackTrace);
+                throw; // Relanza la excepción para que pueda ser manejada más arriba si es necesario
+            }
         }
 
-        public async Task<T> Update(int id, T item)
+        public async Task<string> Update(T item)
         {
+            try
+            {
+
+            
             var json = JsonConvert.SerializeObject(item);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
-            var response = await _httpClient.PutAsync($"{_baseUrl}/{id}", content);
+            var response = await _httpClient.PutAsync($"{_baseUrl}", content);
             response.EnsureSuccessStatusCode();
             var responseContent = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<T>(responseContent);
+            return JsonConvert.DeserializeObject<string>(responseContent);
+            }
+            catch (JsonSerializationException ex)
+            {
+                // Manejar la excepción
+                Console.WriteLine("Error de deserialización JSON:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("StackTrace:");
+                Console.WriteLine(ex.StackTrace);
+                throw; // Relanza la excepción para que pueda ser manejada más arriba si es necesario
+            }
+            catch (Exception ex)
+            {
+                // Manejar otras excepciones que puedan ocurrir
+                Console.WriteLine("Error general:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("StackTrace:");
+                Console.WriteLine(ex.StackTrace);
+                throw; // Relanza la excepción para que pueda ser manejada más arriba si es necesario
+            }
         }
 
-        public async Task<bool> Delete(int id)
+        public async Task<string> Delete(int id)
         {
-            var response = await _httpClient.DeleteAsync($"{_baseUrl}/{id}");
-            return response.IsSuccessStatusCode;
+            try 
+            { 
+                var response = await _httpClient.DeleteAsync($"{_baseUrl}/{id}");
+                var responseContent = await response.Content.ReadAsStringAsync();
+                return responseContent;
+            }
+            catch (JsonSerializationException ex)
+            {
+                // Manejar la excepción
+                Console.WriteLine("Error de deserialización JSON:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("StackTrace:");
+                Console.WriteLine(ex.StackTrace);
+                throw; // Relanza la excepción para que pueda ser manejada más arriba si es necesario
+            }
+            catch (Exception ex)
+            {
+                // Manejar otras excepciones que puedan ocurrir
+                Console.WriteLine("Error general:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("StackTrace:");
+                Console.WriteLine(ex.StackTrace);
+                throw; // Relanza la excepción para que pueda ser manejada más arriba si es necesario
+            }
         }
     }
 }

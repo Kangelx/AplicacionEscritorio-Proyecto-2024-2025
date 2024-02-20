@@ -11,9 +11,9 @@ namespace AplicacionIncidenciasProyecto
     {
         Task<T> GetById(int id);
         Task<IEnumerable<T>> GetAll();
-        Task<bool> Create(T item);
-        Task<bool> Update(int id, T item);
-        Task<bool> Delete(int id);
+        Task<string> Create(T item);
+        Task<string> Update(T item);
+        Task<string> Delete(int id);
 
     }
 }

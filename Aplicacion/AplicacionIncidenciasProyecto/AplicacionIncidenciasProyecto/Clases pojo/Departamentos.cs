@@ -12,11 +12,11 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
         public string cod { get; set; }
         public string nombre { get; set; }
         public bool activo { get; set; }
-        public int jefeDepartamentoId { get; set; }
+        public int? jefeDepartamentoId { get; set; }
 
         public Departamentos() { }
 
-        public Departamentos(int id, string cod, string nombre, bool activo, int jefeDepId)
+        public Departamentos(int id, string cod, string nombre, bool activo, int? jefeDepId)
         {
             this.id = id;
             this.cod = cod;

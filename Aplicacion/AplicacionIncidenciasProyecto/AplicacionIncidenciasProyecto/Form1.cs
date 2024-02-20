@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -68,18 +69,45 @@ namespace AplicacionIncidenciasProyecto
             aula.codigo = "12345";
             aula.descripcion = "API";
             aula.planta = 1;
-            var apiService = new ApiService<Aulas>();
+            //var apiService = new ApiService<Aulas>();
+            //
+            //
+            //IEnumerable<Aulas> aulaCreada = await apiService.GetAll();
+            //foreach (Aulas aulas in aulaCreada)
+            //{
+            //    Debug.WriteLine(aulas.codigo);
+            //    Debug.WriteLine(aulas.planta);
+            //    Debug.WriteLine(aulas.num);
+            //    Debug.WriteLine(aulas.descripcion);
+            //
+            //}
 
-
-            IEnumerable<Aulas> aulaCreada = await apiService.GetAll();
-            foreach(Aulas aulas in aulaCreada)
-            {
-                Console.WriteLine(aulas.num);
-                Console.WriteLine(aulas.descripcion);
-                Console.WriteLine(aulas.planta);
-                Console.WriteLine(aulas.codigo);
-
-            }
+            //var apiService = new ApiService<Incidencias>();
+            //
+            //
+            //IEnumerable<Incidencias> aulaCreada = await apiService.GetAll();
+            //foreach(Incidencias aulas in aulaCreada)
+            //{
+            //    Debug.WriteLine(aulas.num);
+            //    Debug.WriteLine(aulas.tipo);
+            //    Debug.WriteLine(aulas.subtipoId.id);
+            //    Debug.WriteLine(aulas.subtipoId.tipo);
+            //    Debug.WriteLine(aulas.subtipoId.subtipo_nombre);
+            //    Debug.WriteLine(aulas.subtipoId.sub_subtipo);
+            //    Debug.WriteLine(aulas.fechaCreacion);
+            //    Debug.WriteLine(aulas.fechaCierre);
+            //    Debug.WriteLine(aulas.descripcion);
+            //    Debug.WriteLine(aulas.estado);
+            //    Debug.WriteLine(aulas.adjuntoUrl);
+            //    Debug.WriteLine(aulas.creadorId.nombre);
+            //    if (aulas.responsableId != null) Debug.WriteLine(aulas.responsableId.nombre);
+            //    else Debug.WriteLine("es null");
+            //    
+            //    Debug.WriteLine(aulas.tiempo);
+            //    //Debug.WriteLine(aulas.equipoId.id);
+            //
+            //
+            //}
 
         }
         private void Form1_Load(object sender, EventArgs e)

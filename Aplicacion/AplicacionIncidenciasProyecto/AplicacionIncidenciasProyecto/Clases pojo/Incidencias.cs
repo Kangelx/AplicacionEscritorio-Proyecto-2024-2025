@@ -10,20 +10,22 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
 {
     internal class Incidencias
     {
-public int num {  get; set; }
+        public int num {  get; set; }
         public TipoIncidencia tipo { get; set; }
-        public int subtipoId { get; set; }
+        public IncidenciasSubtipos subtipoId { get; set; }
         public DateTime fechaCreacion { get; set; }
-        public DateTime fechaCierre { get; set; }
+        public DateTime? fechaCierre { get; set; }
         public string descripcion {  get; set; }
         public EstadoIncidencia estado { get; set; }
         public string adjuntoUrl { get; set; }
-        public int creadorId { get; set; }
-        public int responsableId { get; set; }
-        public int equipoId { get; set; }
+        public Personal creadorId { get; set; }
+        public Personal responsableId { get; set; }
+        public Equipos equipoId { get; set; }
         public Prioridad prioridad { get; set; }
+        public DateTime? tiempo { get; set; }
+
         public Incidencias() { }
-        public Incidencias(int num, TipoIncidencia tipo, int subtipoId, DateTime fechaCreacion, DateTime fechaCierre, string descripcion, EstadoIncidencia estado, string adjuntoUrl, int creadorId, int responsableId, int equipoId, Prioridad prioridad)
+        public Incidencias(int num, TipoIncidencia tipo, IncidenciasSubtipos subtipoId, DateTime fechaCreacion, DateTime? fechaCierre, string descripcion, EstadoIncidencia estado, string adjuntoUrl, Personal creadorId, Personal responsableId, Equipos equipoId, Prioridad prioridad, DateTime? tiempo)
         {
             this.num = num;
             this.tipo = tipo;
@@ -37,8 +39,10 @@ public int num {  get; set; }
             this.responsableId = responsableId;
             this.equipoId = equipoId;
             this.prioridad = prioridad;
+            this.tiempo = tiempo;
         }
 
+        
         
         
     }

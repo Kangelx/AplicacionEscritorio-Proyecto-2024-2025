@@ -10,19 +10,19 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
     internal class Equipos
     {
         public int id { get; set; }
-        public TipoEquipo tipoEquipo { get; set; }
-        public DateTime fechaAdquisicion { get; set; }
+        public string tipoEquipo { get; set; }
+        public DateTime? fechaAdquisicion { get; set; }
         public string etiqueta { get; set; }
         public string marca { get; set; }
         public string modelo { get; set; }
-        public string descricpcion { get; set; }
-        public bool baja { get; set; }
-        public int aulaNum { get; set; }
-        public int puesto { get; set; }
+        public string descripcion { get; set; }
+        public bool? baja { get; set; }
+        public Aulas aula_num { get; set; }
+        public int? puesto { get; set; }
 
         public Equipos() { }
 
-        public Equipos(int id, TipoEquipo tipoEquipo, DateTime fechaAdquisicion, string etiqueta, string marca, string modelo, string descricpcion, bool baja, int aulaNum, int puesto)
+        public Equipos(int id, string tipoEquipo, DateTime fechaAdquisicion, string etiqueta, string marca, string modelo, string descripcion, bool? baja, Aulas aula_num, int? puesto)
         {
             this.id = id;
             this.tipoEquipo = tipoEquipo;
@@ -30,9 +30,9 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
             this.etiqueta = etiqueta;
             this.marca = marca;
             this.modelo = modelo;
-            this.descricpcion = descricpcion;
+            this.descripcion = descripcion;
             this.baja = baja;
-            this.aulaNum = aulaNum;
+            this.aula_num = aula_num;
             this.puesto = puesto;
         }
 

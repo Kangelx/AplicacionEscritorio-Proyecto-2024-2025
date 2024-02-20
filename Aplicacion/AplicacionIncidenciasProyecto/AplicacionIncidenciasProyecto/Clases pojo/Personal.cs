@@ -17,12 +17,12 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
         public string localidad { get; set; }
         public string cp { get; set; }
         public string tlf { get; set; }
-        public bool activo { get; set; }
-        public int departamentoId { get; set; }
+        public bool? activo { get; set; }
+        public Departamentos departamentoId { get; set; }
 
         public Personal() { }
 
-        public Personal(int id, string dni, string nombre, string apellido1, string apellido2, string direccion, string localidad, string cp, string tlf, bool activo, int departamentoId)
+        public Personal(int id, string dni, string nombre, string apellido1, string apellido2, string direccion, string localidad, string cp, string tlf, bool? activo, Departamentos departamentoId)
         {
             this.id = id;
             this.dni = dni;
