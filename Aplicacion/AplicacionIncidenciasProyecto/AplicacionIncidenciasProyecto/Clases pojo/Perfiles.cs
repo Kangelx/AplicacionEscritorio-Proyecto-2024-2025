@@ -26,24 +26,5 @@ namespace AplicacionIncidenciasProyecto.Clases_pojo
             this.perfil = perfil;
         }
 
-        public List<Perfiles> listar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Perfiles porId(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void guardar(Perfiles t)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void eliminar(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

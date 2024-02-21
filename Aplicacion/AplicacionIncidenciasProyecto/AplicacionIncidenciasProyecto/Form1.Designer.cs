@@ -40,6 +40,8 @@
             this.anel_superiorIzq = new System.Windows.Forms.Panel();
             this.lblEmpresa = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.Label();
+            this.permisos = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel_lateral.SuspendLayout();
             this.anel_superiorIzq.SuspendLayout();
@@ -160,11 +162,30 @@
             this.label1.Size = new System.Drawing.Size(82, 80);
             this.label1.TabIndex = 2;
             // 
+            // txtUsuario
+            // 
+            this.txtUsuario.AutoSize = true;
+            this.txtUsuario.Location = new System.Drawing.Point(430, 201);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(0, 13);
+            this.txtUsuario.TabIndex = 4;
+            // 
+            // permisos
+            // 
+            this.permisos.AutoSize = true;
+            this.permisos.Location = new System.Drawing.Point(506, 338);
+            this.permisos.Name = "permisos";
+            this.permisos.Size = new System.Drawing.Size(35, 13);
+            this.permisos.TabIndex = 5;
+            this.permisos.Text = "label2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 577);
+            this.Controls.Add(this.permisos);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_lateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -176,6 +197,7 @@
             this.panel_lateral.ResumeLayout(false);
             this.anel_superiorIzq.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -192,6 +214,8 @@
         private System.Windows.Forms.Panel anel_superiorIzq;
         private System.Windows.Forms.Label lblEmpresa;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtUsuario;
+        private System.Windows.Forms.Label permisos;
     }
 }
 
