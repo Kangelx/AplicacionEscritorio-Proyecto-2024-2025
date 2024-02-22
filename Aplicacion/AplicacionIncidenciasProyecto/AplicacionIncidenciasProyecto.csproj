@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8588962B-AC6A-4D56-B6A1-3F0E5917347C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AplicacionIncidenciasProyecto</RootNamespace>
+    <AssemblyName>AplicacionIncidenciasProyecto</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="websocket-sharp, Version=1.0.1.0, Culture=neutral, PublicKeyToken=5660b08a1845a91e, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebSocketSharp-netstandard.1.0.1\lib\net45\websocket-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrador\AdministrarPerfilesAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\AdministrarPerfilesAdmin.Designer.cs">
+      <DependentUpon>AdministrarPerfilesAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\ComentarIncidenciaAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\ComentarIncidenciaAdministrador.Designer.cs">
+      <DependentUpon>ComentarIncidenciaAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\GestionarIncidenciasAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\GestionarIncidenciasAdministrador.Designer.cs">
+      <DependentUpon>GestionarIncidenciasAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\IncidenciasAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\IncidenciasAdministrador.Designer.cs">
+      <DependentUpon>IncidenciasAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\InventarioAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\InventarioAdmin.Designer.cs">
+      <DependentUpon>InventarioAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\NotificacionesAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\NotificacionesAdministrador.Designer.cs">
+      <DependentUpon>NotificacionesAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\VerIncidenciaAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\VerIncidenciaAdministrador.Designer.cs">
+      <DependentUpon>VerIncidenciaAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApiController\ApiService.cs" />
+    <Compile Include="ApiController\IApiService.cs" />
+    <Compile Include="Clases pojo\Aulas.cs" />
+    <Compile Include="Clases pojo\Comentarios.cs" />
+    <Compile Include="Clases pojo\Departamentos.cs" />
+    <Compile Include="Clases pojo\Equipos.cs" />
+    <Compile Include="Clases pojo\Incidencias.cs" />
+    <Compile Include="Clases pojo\IncidenciasSubtipos.cs" />
+    <Compile Include="Clases pojo\Perfiles.cs" />
+    <Compile Include="Clases pojo\Personal.cs" />
+    <Compile Include="ControlVariables\Enumerados.cs" />
+    <Compile Include="ControlVariables\VerificaciónEntradaDatos.cs" />
+    <Compile Include="Profesor\ComentarIncidenciaProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesor\ComentarIncidenciaProfesor.Designer.cs">
+      <DependentUpon>ComentarIncidenciaProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\FormularioAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\FormularioAdministrador.Designer.cs">
+      <DependentUpon>FormularioAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\GestionarIncidenciasProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesor\GestionarIncidenciasProfesor.Designer.cs">
+      <DependentUpon>GestionarIncidenciasProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\IncidenciasProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesor\IncidenciasProfesor.Designer.cs">
+      <DependentUpon>IncidenciasProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\inicioSesionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\inicioSesionAdmin.Designer.cs">
+      <DependentUpon>inicioSesionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\FormularioProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesor\FormularioProfesor.Designer.cs">
+      <DependentUpon>FormularioProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\NotificacionesProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesor\NotificacionesProfesor.Designer.cs">
+      <DependentUpon>NotificacionesProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\PerfilProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesor\PerfilProfesor.Designer.cs">
+      <DependentUpon>PerfilProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Profesor\VerIncidenciaProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profesor\VerIncidenciaProfesor.Designer.cs">
+      <DependentUpon>VerIncidenciaProfesor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrador\AdministrarPerfilesAdmin.resx">
+      <DependentUpon>AdministrarPerfilesAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\ComentarIncidenciaAdministrador.resx">
+      <DependentUpon>ComentarIncidenciaAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\GestionarIncidenciasAdministrador.resx">
+      <DependentUpon>GestionarIncidenciasAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\IncidenciasAdministrador.resx">
+      <DependentUpon>IncidenciasAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\InventarioAdmin.resx">
+      <DependentUpon>InventarioAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\NotificacionesAdministrador.resx">
+      <DependentUpon>NotificacionesAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\VerIncidenciaAdministrador.resx">
+      <DependentUpon>VerIncidenciaAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesor\ComentarIncidenciaProfesor.resx">
+      <DependentUpon>ComentarIncidenciaProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\FormularioAdministrador.resx">
+      <DependentUpon>FormularioAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesor\FormularioProfesor.resx">
+      <DependentUpon>FormularioProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesor\GestionarIncidenciasProfesor.resx">
+      <DependentUpon>GestionarIncidenciasProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesor\IncidenciasProfesor.resx">
+      <DependentUpon>IncidenciasProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\inicioSesionAdmin.resx">
+      <DependentUpon>inicioSesionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesor\NotificacionesProfesor.resx">
+      <DependentUpon>NotificacionesProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profesor\PerfilProfesor.resx">
+      <DependentUpon>PerfilProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Profesor\VerIncidenciaProfesor.resx">
+      <DependentUpon>VerIncidenciaProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-file-icon-1453-thumb.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
