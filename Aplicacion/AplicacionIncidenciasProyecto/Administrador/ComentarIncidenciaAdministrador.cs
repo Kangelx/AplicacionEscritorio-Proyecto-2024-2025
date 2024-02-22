@@ -16,6 +16,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
         public ComentarIncidenciaAdministrador()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -42,5 +43,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
         {
             this.Close();
         }
+
+       
     }
 }

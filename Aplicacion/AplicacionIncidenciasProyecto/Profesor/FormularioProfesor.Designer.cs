@@ -282,7 +282,7 @@
             this.grpIncidencia.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
             this.grpIncidencia.Location = new System.Drawing.Point(166, 107);
             this.grpIncidencia.Name = "grpIncidencia";
-            this.grpIncidencia.Size = new System.Drawing.Size(721, 406);
+            this.grpIncidencia.Size = new System.Drawing.Size(826, 406);
             this.grpIncidencia.TabIndex = 33;
             this.grpIncidencia.TabStop = false;
             this.grpIncidencia.Text = "Crear Incidencias";
@@ -295,9 +295,9 @@
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(114, 292);
+            this.groupBox1.Location = new System.Drawing.Point(114, 305);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(591, 72);
+            this.groupBox1.Size = new System.Drawing.Size(595, 72);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             // 
@@ -313,7 +313,7 @@
             // 
             this.button4.AutoEllipsis = true;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button4.Location = new System.Drawing.Point(17, 27);
+            this.button4.Location = new System.Drawing.Point(24, 31);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(97, 23);
             this.button4.TabIndex = 26;
@@ -342,18 +342,18 @@
             // txtDesc
             // 
             this.txtDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.txtDesc.Location = new System.Drawing.Point(114, 165);
+            this.txtDesc.Location = new System.Drawing.Point(114, 164);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDesc.Size = new System.Drawing.Size(413, 121);
+            this.txtDesc.Size = new System.Drawing.Size(490, 121);
             this.txtDesc.TabIndex = 22;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(7, 173);
+            this.label5.Location = new System.Drawing.Point(7, 172);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 21;
@@ -369,16 +369,16 @@
             "WIFI",
             "INTERNET",
             "SOFTWARE"});
-            this.comboBox2.Location = new System.Drawing.Point(390, 88);
+            this.comboBox2.Location = new System.Drawing.Point(415, 85);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(137, 21);
+            this.comboBox2.Size = new System.Drawing.Size(189, 21);
             this.comboBox2.TabIndex = 20;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(272, 92);
+            this.label4.Location = new System.Drawing.Point(297, 87);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 13);
             this.label4.TabIndex = 19;
@@ -394,7 +394,7 @@
             "WIFI",
             "INTERNET",
             "SOFTWARE"});
-            this.comboBox1.Location = new System.Drawing.Point(114, 89);
+            this.comboBox1.Location = new System.Drawing.Point(114, 85);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(137, 21);
             this.comboBox1.TabIndex = 18;
@@ -403,7 +403,7 @@
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.lblTipo.Location = new System.Drawing.Point(7, 89);
+            this.lblTipo.Location = new System.Drawing.Point(7, 87);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(100, 13);
             this.lblTipo.TabIndex = 17;
@@ -430,20 +430,20 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(956, 419);
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnAdd.Location = new System.Drawing.Point(1010, 432);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(98, 33);
+            this.btnAdd.Size = new System.Drawing.Size(97, 23);
             this.btnAdd.TabIndex = 35;
             this.btnAdd.Text = "Añadir";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(956, 480);
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.button6.Location = new System.Drawing.Point(1010, 461);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(98, 33);
+            this.button6.Size = new System.Drawing.Size(97, 23);
             this.button6.TabIndex = 36;
             this.button6.Text = "Cancelar";
             this.button6.UseVisualStyleBackColor = true;

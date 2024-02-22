@@ -417,7 +417,7 @@ namespace AplicacionIncidenciasProyecto
             this.Name = "FormularioAdministrador";
             this.Text = "FormularioAdministrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormularioAdministrador_FormClosed);
-            this.Load += new System.EventHandler(this.FormularioAdministrador_Load_1);
+            
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.anel_superiorIzq.ResumeLayout(false);

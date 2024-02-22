@@ -16,11 +16,13 @@ namespace AplicacionIncidenciasProyecto.Administrador
         public GestionarIncidenciasAdministrador()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         public GestionarIncidenciasAdministrador(FormularioAdministrador form)
         {
             form1 = form;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -51,5 +53,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             ComentarIncidenciaAdministrador formComentAdmin = new ComentarIncidenciaAdministrador();
             formComentAdmin.Show();
         }
+
+       
     }
 }

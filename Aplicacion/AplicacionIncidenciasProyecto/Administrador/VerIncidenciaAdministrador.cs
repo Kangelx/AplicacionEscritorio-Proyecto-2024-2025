@@ -17,13 +17,10 @@ namespace AplicacionIncidenciasProyecto.Administrador
         {
             formPadre = form;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void VerIncidenciaAdministrador_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void VerIncidenciaAdministrador_FormClosed(object sender, FormClosedEventArgs e)
         {
             formPadre.Visible = true;

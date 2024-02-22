@@ -18,6 +18,7 @@ namespace AplicacionIncidenciasProyecto
         {
             form1 = form;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
        
@@ -33,15 +34,27 @@ namespace AplicacionIncidenciasProyecto
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+       
 
         private void btnComent_Click(object sender, EventArgs e)
         {
             ComentarIncidenciaProfesor formComent = new ComentarIncidenciaProfesor();
             formComent.Show();
+        }
+
+        private void btnCerrar_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void GestionarIncidenciasProfesor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

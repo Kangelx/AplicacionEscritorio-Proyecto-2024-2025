@@ -17,6 +17,7 @@ namespace AplicacionIncidenciasProyecto
         {
             form1 = form;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -63,6 +64,11 @@ namespace AplicacionIncidenciasProyecto
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void VerIncidenciaProfesor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

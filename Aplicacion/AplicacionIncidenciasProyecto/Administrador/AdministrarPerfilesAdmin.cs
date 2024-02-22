@@ -16,11 +16,13 @@ namespace AplicacionIncidenciasProyecto.Administrador
         public AdministrarPerfilesAdmin()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         public AdministrarPerfilesAdmin(FormularioAdministrador form)
         {
             form1 = form;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -33,11 +35,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.Close();
         }
 
-        private void AdministrarPerfilesAdmin_Load(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void AdministrarPerfilesAdmin_FormClosed(object sender, FormClosedEventArgs e)
         {
             form1.Visible = true;

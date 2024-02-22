@@ -17,6 +17,7 @@ namespace AplicacionIncidenciasProyecto.Profesor
         {
             form1 = form;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -32,6 +33,11 @@ namespace AplicacionIncidenciasProyecto.Profesor
         private void PerfilProfesor_FormClosed(object sender, FormClosedEventArgs e)
         {
             form1.Visible = true;
+        }
+
+        private void PerfilProfesor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

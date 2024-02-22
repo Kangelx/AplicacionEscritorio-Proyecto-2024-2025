@@ -17,7 +17,8 @@ namespace AplicacionIncidenciasProyecto
         public FormularioProfesor()
         {
             InitializeComponent();
-           // this.Load += Form1_Load;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            // this.Load += Form1_Load;
         }
 
 

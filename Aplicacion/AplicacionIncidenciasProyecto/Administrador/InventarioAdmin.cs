@@ -16,11 +16,13 @@ namespace AplicacionIncidenciasProyecto.Administrador
         public InventarioAdmin()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         public InventarioAdmin(FormularioAdministrador form)
         {
             form1 = form;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void InventarioAdmin_FormClosed(object sender, FormClosedEventArgs e)
@@ -37,5 +39,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
         {
             this.Close();
         }
+
+        
     }
 }

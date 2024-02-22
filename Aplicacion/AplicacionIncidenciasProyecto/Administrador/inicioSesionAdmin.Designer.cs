@@ -63,7 +63,7 @@ namespace AplicacionIncidenciasProyecto
             this.panel_menu.Name = "panel_menu";
             this.panel_menu.Size = new System.Drawing.Size(437, 81);
             this.panel_menu.TabIndex = 0;
-            this.panel_menu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_menu_Paint);
+            
             // 
             // label2
             // 
@@ -111,7 +111,7 @@ namespace AplicacionIncidenciasProyecto
             this.button1.Size = new System.Drawing.Size(34, 31);
             this.button1.TabIndex = 8;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            
             // 
             // imgListIconos
             // 
@@ -160,7 +160,7 @@ namespace AplicacionIncidenciasProyecto
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(365, 20);
             this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // txtPassword
             // 
@@ -230,7 +230,7 @@ namespace AplicacionIncidenciasProyecto
             this.Name = "inicioSesionAdmin";
             this.Text = "inicioSesionAdmin";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.inicioSesionAdmin_FormClosed);
-            this.Load += new System.EventHandler(this.inicioSesionAdmin_Load);
+            
             this.panel_menu.ResumeLayout(false);
             this.panel_menu.PerformLayout();
             this.ResumeLayout(false);

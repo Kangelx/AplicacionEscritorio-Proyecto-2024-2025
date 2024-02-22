@@ -16,11 +16,13 @@ namespace AplicacionIncidenciasProyecto.Administrador
         public NotificacionesAdministrador()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         public NotificacionesAdministrador(FormularioAdministrador form)
         {
             form1 = form;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -37,5 +39,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
         {
             form1.Visible = true;
         }
+
+        
     }
 }

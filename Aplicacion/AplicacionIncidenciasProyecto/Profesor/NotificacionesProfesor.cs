@@ -17,6 +17,7 @@ namespace AplicacionIncidenciasProyecto
         {
             form1 = form;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         
@@ -33,6 +34,11 @@ namespace AplicacionIncidenciasProyecto
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void NotificacionesProfesor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

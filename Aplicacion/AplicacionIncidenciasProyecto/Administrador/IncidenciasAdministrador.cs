@@ -16,11 +16,13 @@ namespace AplicacionIncidenciasProyecto.Administrador
         public IncidenciasAdministrador()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         public IncidenciasAdministrador(FormularioAdministrador form)
         {
             form1 = form;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -28,11 +30,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             Application.Exit();
         }
 
-        private void IncidenciasAdministrador_Load(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

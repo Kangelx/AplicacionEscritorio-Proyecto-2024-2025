@@ -64,35 +64,25 @@ namespace AplicacionIncidenciasProyecto.Profesor
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.lblSuperior = new System.Windows.Forms.Label();
-            this.panel_lateral = new System.Windows.Forms.Panel();
-            this.btnAdmin = new System.Windows.Forms.Button();
-            this.btnNotificaciones = new System.Windows.Forms.Button();
-            this.btnIncidencias = new System.Windows.Forms.Button();
-            this.btnGestionar = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtUser = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.anel_superiorIzq = new System.Windows.Forms.Panel();
             this.lblEmpresa = new System.Windows.Forms.Label();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.LogosCuadrados = new System.Windows.Forms.ImageList(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.lblSuperior = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel_lateral.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.anel_superiorIzq.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCancel
             // 
             this.btnCancel.ImageKey = "cross.png";
             this.btnCancel.ImageList = this.imgListIconos;
-            this.btnCancel.Location = new System.Drawing.Point(976, 338);
+            this.btnCancel.Location = new System.Drawing.Point(847, 336);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(42, 37);
             this.btnCancel.TabIndex = 42;
@@ -118,7 +108,7 @@ namespace AplicacionIncidenciasProyecto.Profesor
             // 
             this.btnAdd.ImageKey = "check.png";
             this.btnAdd.ImageList = this.imgListIconos;
-            this.btnAdd.Location = new System.Drawing.Point(976, 295);
+            this.btnAdd.Location = new System.Drawing.Point(847, 293);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(42, 37);
             this.btnAdd.TabIndex = 41;
@@ -151,7 +141,7 @@ namespace AplicacionIncidenciasProyecto.Profesor
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(191, 107);
+            this.groupBox1.Location = new System.Drawing.Point(62, 105);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(739, 449);
             this.groupBox1.TabIndex = 40;
@@ -447,33 +437,90 @@ namespace AplicacionIncidenciasProyecto.Profesor
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Goldenrod;
+            this.panel2.Controls.Add(this.lblEmpresa);
+            this.panel2.Controls.Add(this.txtUser);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Controls.Add(this.lblSuperior);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(154, 0);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(965, 81);
+            this.panel2.Size = new System.Drawing.Size(1119, 81);
             this.panel2.TabIndex = 39;
+            // 
+            // lblEmpresa
+            // 
+            this.lblEmpresa.Font = new System.Drawing.Font("Arial Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpresa.Location = new System.Drawing.Point(58, 22);
+            this.lblEmpresa.Name = "lblEmpresa";
+            this.lblEmpresa.Size = new System.Drawing.Size(100, 56);
+            this.lblEmpresa.TabIndex = 3;
+            this.lblEmpresa.Text = "AlpacApp Incidents";
+            // 
+            // txtUser
+            // 
+            this.txtUser.Location = new System.Drawing.Point(930, 30);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.ReadOnly = true;
+            this.txtUser.Size = new System.Drawing.Size(97, 20);
+            this.txtUser.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.ImageIndex = 0;
+            this.label1.ImageList = this.LogosCuadrados;
+            this.label1.Location = new System.Drawing.Point(3, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 75);
+            this.label1.TabIndex = 2;
+            // 
+            // LogosCuadrados
+            // 
+            this.LogosCuadrados.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("LogosCuadrados.ImageStream")));
+            this.LogosCuadrados.TransparentColor = System.Drawing.Color.Transparent;
+            this.LogosCuadrados.Images.SetKeyName(0, "AlpacApp Incidents.png");
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ImageIndex = 5;
+            this.label3.ImageList = this.imgListIconos;
+            this.label3.Location = new System.Drawing.Point(895, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(28, 23);
+            this.label3.TabIndex = 14;
             // 
             // button1
             // 
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.ImageIndex = 6;
             this.button1.ImageList = this.imgListIconos;
-            this.button1.Location = new System.Drawing.Point(830, 16);
+            this.button1.Location = new System.Drawing.Point(1033, 25);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(34, 31);
             this.button1.TabIndex = 8;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ImageIndex = 5;
+            this.label2.Location = new System.Drawing.Point(903, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 0;
+            // 
             // btnCerrar
             // 
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnCerrar.ImageIndex = 0;
             this.btnCerrar.ImageList = this.imgListIconos;
-            this.btnCerrar.Location = new System.Drawing.Point(870, 16);
+            this.btnCerrar.Location = new System.Drawing.Point(1073, 25);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(34, 31);
             this.btnCerrar.TabIndex = 6;
@@ -485,137 +532,11 @@ namespace AplicacionIncidenciasProyecto.Profesor
             this.lblSuperior.AutoSize = true;
             this.lblSuperior.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSuperior.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblSuperior.Location = new System.Drawing.Point(6, 43);
+            this.lblSuperior.Location = new System.Drawing.Point(181, 39);
             this.lblSuperior.Name = "lblSuperior";
             this.lblSuperior.Size = new System.Drawing.Size(282, 34);
             this.lblSuperior.TabIndex = 0;
             this.lblSuperior.Text = "IES Miguel Herrero ";
-            // 
-            // panel_lateral
-            // 
-            this.panel_lateral.BackColor = System.Drawing.Color.Moccasin;
-            this.panel_lateral.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel_lateral.Controls.Add(this.btnAdmin);
-            this.panel_lateral.Controls.Add(this.btnNotificaciones);
-            this.panel_lateral.Controls.Add(this.btnIncidencias);
-            this.panel_lateral.Controls.Add(this.btnGestionar);
-            this.panel_lateral.Controls.Add(this.panel3);
-            this.panel_lateral.Controls.Add(this.anel_superiorIzq);
-            this.panel_lateral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_lateral.Location = new System.Drawing.Point(0, 0);
-            this.panel_lateral.Name = "panel_lateral";
-            this.panel_lateral.Size = new System.Drawing.Size(154, 577);
-            this.panel_lateral.TabIndex = 38;
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.Location = new System.Drawing.Point(-2, 344);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(152, 59);
-            this.btnAdmin.TabIndex = 11;
-            this.btnAdmin.Text = "Administrar Perfiles";
-            this.btnAdmin.UseVisualStyleBackColor = true;
-            // 
-            // btnNotificaciones
-            // 
-            this.btnNotificaciones.Location = new System.Drawing.Point(-2, 286);
-            this.btnNotificaciones.Name = "btnNotificaciones";
-            this.btnNotificaciones.Size = new System.Drawing.Size(152, 59);
-            this.btnNotificaciones.TabIndex = 11;
-            this.btnNotificaciones.Text = "Notificaciones";
-            this.btnNotificaciones.UseVisualStyleBackColor = true;
-            // 
-            // btnIncidencias
-            // 
-            this.btnIncidencias.Location = new System.Drawing.Point(-2, 228);
-            this.btnIncidencias.Name = "btnIncidencias";
-            this.btnIncidencias.Size = new System.Drawing.Size(152, 59);
-            this.btnIncidencias.TabIndex = 3;
-            this.btnIncidencias.Text = "Mis Incidencias";
-            this.btnIncidencias.UseVisualStyleBackColor = true;
-            // 
-            // btnGestionar
-            // 
-            this.btnGestionar.Location = new System.Drawing.Point(-2, 170);
-            this.btnGestionar.Name = "btnGestionar";
-            this.btnGestionar.Size = new System.Drawing.Size(152, 59);
-            this.btnGestionar.TabIndex = 2;
-            this.btnGestionar.Text = "Gestionar Incidencias";
-            this.btnGestionar.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Controls.Add(this.txtUser);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(-2, 78);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(152, 92);
-            this.panel3.TabIndex = 1;
-            // 
-            // txtUser
-            // 
-            this.txtUser.Location = new System.Drawing.Point(40, 63);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.ReadOnly = true;
-            this.txtUser.Size = new System.Drawing.Size(97, 20);
-            this.txtUser.TabIndex = 15;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ImageIndex = 5;
-            this.label3.ImageList = this.imgListIconos;
-            this.label3.Location = new System.Drawing.Point(5, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 23);
-            this.label3.TabIndex = 14;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ImageIndex = 5;
-            this.label2.Location = new System.Drawing.Point(13, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
-            this.label2.TabIndex = 0;
-            // 
-            // anel_superiorIzq
-            // 
-            this.anel_superiorIzq.BackColor = System.Drawing.SystemColors.Control;
-            this.anel_superiorIzq.Controls.Add(this.lblEmpresa);
-            this.anel_superiorIzq.Controls.Add(this.label1);
-            this.anel_superiorIzq.Dock = System.Windows.Forms.DockStyle.Top;
-            this.anel_superiorIzq.Location = new System.Drawing.Point(0, 0);
-            this.anel_superiorIzq.Name = "anel_superiorIzq";
-            this.anel_superiorIzq.Size = new System.Drawing.Size(150, 79);
-            this.anel_superiorIzq.TabIndex = 0;
-            // 
-            // lblEmpresa
-            // 
-            this.lblEmpresa.Font = new System.Drawing.Font("Arial Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpresa.Location = new System.Drawing.Point(58, 19);
-            this.lblEmpresa.Name = "lblEmpresa";
-            this.lblEmpresa.Size = new System.Drawing.Size(100, 56);
-            this.lblEmpresa.TabIndex = 3;
-            this.lblEmpresa.Text = "AlpacApp Incidents";
-            // 
-            // label1
-            // 
-            this.label1.ImageIndex = 0;
-            this.label1.ImageList = this.LogosCuadrados;
-            this.label1.Location = new System.Drawing.Point(-3, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 75);
-            this.label1.TabIndex = 2;
-            // 
-            // LogosCuadrados
-            // 
-            this.LogosCuadrados.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("LogosCuadrados.ImageStream")));
-            this.LogosCuadrados.TransparentColor = System.Drawing.Color.Transparent;
-            this.LogosCuadrados.Images.SetKeyName(0, "AlpacApp Incidents.png");
             // 
             // PerfilProfesor
             // 
@@ -626,21 +547,17 @@ namespace AplicacionIncidenciasProyecto.Profesor
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel_lateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PerfilProfesor";
             this.Text = "PerfilProfesor";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PerfilProfesor_FormClosed);
+            this.Load += new System.EventHandler(this.PerfilProfesor_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel_lateral.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.anel_superiorIzq.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -682,16 +599,9 @@ namespace AplicacionIncidenciasProyecto.Profesor
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label lblSuperior;
-        private System.Windows.Forms.Panel panel_lateral;
-        private System.Windows.Forms.Button btnAdmin;
-        private System.Windows.Forms.Button btnNotificaciones;
-        private System.Windows.Forms.Button btnIncidencias;
-        private System.Windows.Forms.Button btnGestionar;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel anel_superiorIzq;
         private System.Windows.Forms.Label lblEmpresa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ImageList imgListIconos;

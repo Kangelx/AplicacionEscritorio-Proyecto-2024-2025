@@ -20,11 +20,17 @@ namespace AplicacionIncidenciasProyecto
             dateTimePicker1.Format = DateTimePickerFormat.Short;
             dateTimePicker1.ShowUpDown = false;
             dateTimePicker1.Value = DateTime.Today;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         public IncidenciasProfesor(FormularioProfesor form)
         {
             form1 = form;
             InitializeComponent();
+            // Configurando el control DateTimePicker para mostrar un calendario
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
+            dateTimePicker1.ShowUpDown = false;
+            dateTimePicker1.Value = DateTime.Today;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnVer_Click(object sender, EventArgs e)
@@ -51,6 +57,14 @@ namespace AplicacionIncidenciasProyecto
             Application.Exit();
         }
 
-       
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void IncidenciasProfesor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

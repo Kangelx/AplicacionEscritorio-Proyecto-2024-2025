@@ -16,18 +16,16 @@ namespace AplicacionIncidenciasProyecto.Administrador
         public Perfil()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         public Perfil(AdministrarPerfilesAdmin form)
         {
             form1 = form;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void Perfil_FormClosed(object sender, FormClosedEventArgs e)
         {
             form1.Visible = true;
@@ -42,5 +40,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
         {
             this.Close();
         }
+
+        
     }
 }

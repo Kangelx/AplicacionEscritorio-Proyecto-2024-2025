@@ -65,18 +65,10 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.imgListIconos = new System.Windows.Forms.ImageList(this.components);
             this.btnCerrar = new System.Windows.Forms.Button();
             this.lblSuperior = new System.Windows.Forms.Label();
-            this.panel_lateral = new System.Windows.Forms.Panel();
-            this.btnInventario = new System.Windows.Forms.Button();
-            this.btnAdmin = new System.Windows.Forms.Button();
-            this.btnNotificaciones = new System.Windows.Forms.Button();
-            this.btnIncidencias = new System.Windows.Forms.Button();
-            this.btnGestionar = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.anel_superiorIzq = new System.Windows.Forms.Panel();
             this.lblEmpresa = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LogosCuadrados = new System.Windows.Forms.ImageList(this.components);
@@ -87,9 +79,6 @@ namespace AplicacionIncidenciasProyecto.Administrador
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel_lateral.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.anel_superiorIzq.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagebx)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,9 +86,9 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(166, 391);
+            this.groupBox2.Location = new System.Drawing.Point(59, 394);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(389, 174);
+            this.groupBox2.Size = new System.Drawing.Size(511, 174);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Comentarios";
@@ -107,15 +96,15 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 32);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 32);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(362, 133);
+            this.dataGridView1.Size = new System.Drawing.Size(493, 133);
             this.dataGridView1.TabIndex = 0;
             // 
             // button5
             // 
             this.button5.AutoSize = true;
-            this.button5.Location = new System.Drawing.Point(1000, 278);
+            this.button5.Location = new System.Drawing.Point(969, 280);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(98, 30);
             this.button5.TabIndex = 29;
@@ -125,7 +114,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // button4
             // 
             this.button4.AutoSize = true;
-            this.button4.Location = new System.Drawing.Point(1001, 350);
+            this.button4.Location = new System.Drawing.Point(970, 352);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(97, 30);
             this.button4.TabIndex = 28;
@@ -159,9 +148,9 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(165, 95);
+            this.groupBox1.Location = new System.Drawing.Point(58, 98);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(812, 290);
+            this.groupBox1.Size = new System.Drawing.Size(884, 290);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Incidencia";
@@ -169,7 +158,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // textBox11
             // 
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.textBox11.Location = new System.Drawing.Point(648, 94);
+            this.textBox11.Location = new System.Drawing.Point(711, 94);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(48, 20);
             this.textBox11.TabIndex = 25;
@@ -178,7 +167,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(596, 97);
+            this.label7.Location = new System.Drawing.Point(659, 97);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 13);
             this.label7.TabIndex = 24;
@@ -195,7 +184,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             "Enviada a Infortec",
             "Resuelta",
             "Cerrada"});
-            this.comboBox1.Location = new System.Drawing.Point(396, 43);
+            this.comboBox1.Location = new System.Drawing.Point(459, 43);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(149, 21);
             this.comboBox1.TabIndex = 23;
@@ -203,7 +192,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // textBox10
             // 
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.textBox10.Location = new System.Drawing.Point(521, 94);
+            this.textBox10.Location = new System.Drawing.Point(584, 94);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(48, 20);
             this.textBox10.TabIndex = 22;
@@ -212,7 +201,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label15.Location = new System.Drawing.Point(469, 97);
+            this.label15.Location = new System.Drawing.Point(532, 97);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(43, 13);
             this.label15.TabIndex = 21;
@@ -221,7 +210,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // textBox9
             // 
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.textBox9.Location = new System.Drawing.Point(396, 120);
+            this.textBox9.Location = new System.Drawing.Point(459, 120);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(48, 20);
             this.textBox9.TabIndex = 20;
@@ -230,7 +219,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label14.Location = new System.Drawing.Point(344, 123);
+            this.label14.Location = new System.Drawing.Point(407, 123);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(31, 13);
             this.label14.TabIndex = 19;
@@ -239,7 +228,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.textBox8.Location = new System.Drawing.Point(396, 94);
+            this.textBox8.Location = new System.Drawing.Point(459, 94);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(48, 20);
             this.textBox8.TabIndex = 18;
@@ -248,7 +237,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label13.Location = new System.Drawing.Point(344, 97);
+            this.label13.Location = new System.Drawing.Point(407, 97);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(46, 13);
             this.label13.TabIndex = 17;
@@ -260,7 +249,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.textBox7.Location = new System.Drawing.Point(72, 97);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(194, 20);
+            this.textBox7.Size = new System.Drawing.Size(252, 20);
             this.textBox7.TabIndex = 16;
             // 
             // label12
@@ -275,7 +264,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.textBox6.Location = new System.Drawing.Point(434, 255);
+            this.textBox6.Location = new System.Drawing.Point(497, 255);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(288, 20);
             this.textBox6.TabIndex = 14;
@@ -284,7 +273,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label11.Location = new System.Drawing.Point(344, 263);
+            this.label11.Location = new System.Drawing.Point(407, 263);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 13);
             this.label11.TabIndex = 13;
@@ -293,7 +282,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.textBox5.Location = new System.Drawing.Point(434, 185);
+            this.textBox5.Location = new System.Drawing.Point(497, 185);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -304,7 +293,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             this.label10.AutoEllipsis = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label10.Location = new System.Drawing.Point(344, 188);
+            this.label10.Location = new System.Drawing.Point(407, 188);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(100, 44);
             this.label10.TabIndex = 11;
@@ -315,7 +304,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.textBox4.Location = new System.Drawing.Point(72, 229);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(194, 20);
+            this.textBox4.Size = new System.Drawing.Size(252, 20);
             this.textBox4.TabIndex = 10;
             // 
             // label9
@@ -334,7 +323,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.textBox3.Location = new System.Drawing.Point(72, 186);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(194, 20);
+            this.textBox3.Size = new System.Drawing.Size(252, 20);
             this.textBox3.TabIndex = 8;
             // 
             // label8
@@ -352,7 +341,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.textBox2.Location = new System.Drawing.Point(72, 139);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 20);
+            this.textBox2.Size = new System.Drawing.Size(252, 20);
             this.textBox2.TabIndex = 5;
             // 
             // label6
@@ -369,7 +358,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(344, 48);
+            this.label5.Location = new System.Drawing.Point(407, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 2;
@@ -397,13 +386,19 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Goldenrod;
+            this.panel2.Controls.Add(this.lblEmpresa);
+            this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.txtUser);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.btnCerrar);
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblSuperior);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(154, 0);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(965, 81);
+            this.panel2.Size = new System.Drawing.Size(1119, 81);
             this.panel2.TabIndex = 26;
             // 
             // button1
@@ -411,7 +406,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.ImageIndex = 6;
             this.button1.ImageList = this.imgListIconos;
-            this.button1.Location = new System.Drawing.Point(830, 16);
+            this.button1.Location = new System.Drawing.Point(1033, 24);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(34, 31);
             this.button1.TabIndex = 8;
@@ -437,7 +432,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnCerrar.ImageIndex = 0;
             this.btnCerrar.ImageList = this.imgListIconos;
-            this.btnCerrar.Location = new System.Drawing.Point(870, 16);
+            this.btnCerrar.Location = new System.Drawing.Point(1073, 24);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(34, 31);
             this.btnCerrar.TabIndex = 6;
@@ -449,92 +444,18 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.lblSuperior.AutoSize = true;
             this.lblSuperior.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSuperior.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblSuperior.Location = new System.Drawing.Point(6, 43);
+            this.lblSuperior.Location = new System.Drawing.Point(160, 38);
             this.lblSuperior.Name = "lblSuperior";
             this.lblSuperior.Size = new System.Drawing.Size(282, 34);
             this.lblSuperior.TabIndex = 0;
             this.lblSuperior.Text = "IES Miguel Herrero ";
-            // 
-            // panel_lateral
-            // 
-            this.panel_lateral.BackColor = System.Drawing.Color.Moccasin;
-            this.panel_lateral.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel_lateral.Controls.Add(this.btnInventario);
-            this.panel_lateral.Controls.Add(this.btnAdmin);
-            this.panel_lateral.Controls.Add(this.btnNotificaciones);
-            this.panel_lateral.Controls.Add(this.btnIncidencias);
-            this.panel_lateral.Controls.Add(this.btnGestionar);
-            this.panel_lateral.Controls.Add(this.panel3);
-            this.panel_lateral.Controls.Add(this.anel_superiorIzq);
-            this.panel_lateral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_lateral.Location = new System.Drawing.Point(0, 0);
-            this.panel_lateral.Name = "panel_lateral";
-            this.panel_lateral.Size = new System.Drawing.Size(154, 577);
-            this.panel_lateral.TabIndex = 25;
-            // 
-            // btnInventario
-            // 
-            this.btnInventario.Location = new System.Drawing.Point(-2, 402);
-            this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(152, 59);
-            this.btnInventario.TabIndex = 33;
-            this.btnInventario.Text = "Inventario";
-            this.btnInventario.UseVisualStyleBackColor = true;
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.Location = new System.Drawing.Point(-2, 344);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(152, 59);
-            this.btnAdmin.TabIndex = 11;
-            this.btnAdmin.Text = "Administrar Perfiles";
-            this.btnAdmin.UseVisualStyleBackColor = true;
-            // 
-            // btnNotificaciones
-            // 
-            this.btnNotificaciones.Location = new System.Drawing.Point(-2, 286);
-            this.btnNotificaciones.Name = "btnNotificaciones";
-            this.btnNotificaciones.Size = new System.Drawing.Size(152, 59);
-            this.btnNotificaciones.TabIndex = 11;
-            this.btnNotificaciones.Text = "Notificaciones";
-            this.btnNotificaciones.UseVisualStyleBackColor = true;
-            // 
-            // btnIncidencias
-            // 
-            this.btnIncidencias.Location = new System.Drawing.Point(-2, 228);
-            this.btnIncidencias.Name = "btnIncidencias";
-            this.btnIncidencias.Size = new System.Drawing.Size(152, 59);
-            this.btnIncidencias.TabIndex = 3;
-            this.btnIncidencias.Text = "Mis Incidencias";
-            this.btnIncidencias.UseVisualStyleBackColor = true;
-            // 
-            // btnGestionar
-            // 
-            this.btnGestionar.Location = new System.Drawing.Point(-2, 170);
-            this.btnGestionar.Name = "btnGestionar";
-            this.btnGestionar.Size = new System.Drawing.Size(152, 59);
-            this.btnGestionar.TabIndex = 2;
-            this.btnGestionar.Text = "Gestionar Incidencias";
-            this.btnGestionar.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.txtUser);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(-2, 78);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(152, 92);
-            this.panel3.TabIndex = 1;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label16.Location = new System.Drawing.Point(37, 47);
+            this.label16.Location = new System.Drawing.Point(926, 19);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(100, 13);
             this.label16.TabIndex = 16;
@@ -542,7 +463,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(40, 63);
+            this.txtUser.Location = new System.Drawing.Point(929, 35);
             this.txtUser.Name = "txtUser";
             this.txtUser.ReadOnly = true;
             this.txtUser.Size = new System.Drawing.Size(97, 20);
@@ -553,7 +474,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ImageIndex = 5;
             this.label3.ImageList = this.imgListIconos;
-            this.label3.Location = new System.Drawing.Point(5, 61);
+            this.label3.Location = new System.Drawing.Point(894, 33);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 23);
             this.label3.TabIndex = 14;
@@ -563,26 +484,15 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ImageIndex = 5;
-            this.label2.Location = new System.Drawing.Point(13, 48);
+            this.label2.Location = new System.Drawing.Point(902, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 0;
             // 
-            // anel_superiorIzq
-            // 
-            this.anel_superiorIzq.BackColor = System.Drawing.SystemColors.Control;
-            this.anel_superiorIzq.Controls.Add(this.lblEmpresa);
-            this.anel_superiorIzq.Controls.Add(this.label1);
-            this.anel_superiorIzq.Dock = System.Windows.Forms.DockStyle.Top;
-            this.anel_superiorIzq.Location = new System.Drawing.Point(0, 0);
-            this.anel_superiorIzq.Name = "anel_superiorIzq";
-            this.anel_superiorIzq.Size = new System.Drawing.Size(150, 79);
-            this.anel_superiorIzq.TabIndex = 0;
-            // 
             // lblEmpresa
             // 
             this.lblEmpresa.Font = new System.Drawing.Font("Arial Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpresa.Location = new System.Drawing.Point(58, 19);
+            this.lblEmpresa.Location = new System.Drawing.Point(54, 24);
             this.lblEmpresa.Name = "lblEmpresa";
             this.lblEmpresa.Size = new System.Drawing.Size(100, 56);
             this.lblEmpresa.TabIndex = 3;
@@ -592,7 +502,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             this.label1.ImageIndex = 0;
             this.label1.ImageList = this.LogosCuadrados;
-            this.label1.Location = new System.Drawing.Point(-3, 3);
+            this.label1.Location = new System.Drawing.Point(3, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 75);
             this.label1.TabIndex = 2;
@@ -606,7 +516,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // button6
             // 
             this.button6.AutoSize = true;
-            this.button6.Location = new System.Drawing.Point(1000, 314);
+            this.button6.Location = new System.Drawing.Point(969, 316);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(98, 30);
             this.button6.TabIndex = 31;
@@ -615,7 +525,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             // imagebx
             // 
-            this.imagebx.Location = new System.Drawing.Point(599, 404);
+            this.imagebx.Location = new System.Drawing.Point(605, 407);
             this.imagebx.Name = "imagebx";
             this.imagebx.Size = new System.Drawing.Size(400, 161);
             this.imagebx.TabIndex = 32;
@@ -623,7 +533,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(561, 404);
+            this.webBrowser1.Location = new System.Drawing.Point(579, 407);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(400, 161);
@@ -642,22 +552,17 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel_lateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VerIncidenciaAdministrador";
             this.Text = "VerIncidenciaAdministrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VerIncidenciaAdministrador_FormClosed);
-            this.Load += new System.EventHandler(this.VerIncidenciaAdministrador_Load);
+            
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel_lateral.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.anel_superiorIzq.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imagebx)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -688,21 +593,13 @@ namespace AplicacionIncidenciasProyecto.Administrador
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label lblSuperior;
-        private System.Windows.Forms.Panel panel_lateral;
-        private System.Windows.Forms.Button btnAdmin;
-        private System.Windows.Forms.Button btnNotificaciones;
-        private System.Windows.Forms.Button btnIncidencias;
-        private System.Windows.Forms.Button btnGestionar;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel anel_superiorIzq;
         private System.Windows.Forms.Label lblEmpresa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ImageList imgListIconos;
         private System.Windows.Forms.ImageList LogosCuadrados;
-        private System.Windows.Forms.Button btnInventario;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox10;
