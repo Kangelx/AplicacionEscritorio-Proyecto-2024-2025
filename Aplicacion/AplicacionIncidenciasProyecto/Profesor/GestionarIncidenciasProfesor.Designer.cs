@@ -37,11 +37,6 @@ namespace AplicacionIncidenciasProyecto
             this.btnCerrar = new System.Windows.Forms.Button();
             this.lblSuperior = new System.Windows.Forms.Label();
             this.panel_lateral = new System.Windows.Forms.Panel();
-            this.btnInventario = new System.Windows.Forms.Button();
-            this.btnAdmin = new System.Windows.Forms.Button();
-            this.btnNotificaciones = new System.Windows.Forms.Button();
-            this.btnIncidencias = new System.Windows.Forms.Button();
-            this.btnGestionar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -132,11 +127,6 @@ namespace AplicacionIncidenciasProyecto
             // 
             this.panel_lateral.BackColor = System.Drawing.Color.Moccasin;
             this.panel_lateral.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel_lateral.Controls.Add(this.btnInventario);
-            this.panel_lateral.Controls.Add(this.btnAdmin);
-            this.panel_lateral.Controls.Add(this.btnNotificaciones);
-            this.panel_lateral.Controls.Add(this.btnIncidencias);
-            this.panel_lateral.Controls.Add(this.btnGestionar);
             this.panel_lateral.Controls.Add(this.panel3);
             this.panel_lateral.Controls.Add(this.anel_superiorIzq);
             this.panel_lateral.Dock = System.Windows.Forms.DockStyle.Left;
@@ -144,51 +134,6 @@ namespace AplicacionIncidenciasProyecto
             this.panel_lateral.Name = "panel_lateral";
             this.panel_lateral.Size = new System.Drawing.Size(154, 577);
             this.panel_lateral.TabIndex = 14;
-            // 
-            // btnInventario
-            // 
-            this.btnInventario.Location = new System.Drawing.Point(-2, 402);
-            this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(152, 59);
-            this.btnInventario.TabIndex = 13;
-            this.btnInventario.Text = "Inventario";
-            this.btnInventario.UseVisualStyleBackColor = true;
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.Location = new System.Drawing.Point(-2, 344);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(152, 59);
-            this.btnAdmin.TabIndex = 11;
-            this.btnAdmin.Text = "Administrar Perfiles";
-            this.btnAdmin.UseVisualStyleBackColor = true;
-            // 
-            // btnNotificaciones
-            // 
-            this.btnNotificaciones.Location = new System.Drawing.Point(-2, 286);
-            this.btnNotificaciones.Name = "btnNotificaciones";
-            this.btnNotificaciones.Size = new System.Drawing.Size(152, 59);
-            this.btnNotificaciones.TabIndex = 11;
-            this.btnNotificaciones.Text = "Notificaciones";
-            this.btnNotificaciones.UseVisualStyleBackColor = true;
-            // 
-            // btnIncidencias
-            // 
-            this.btnIncidencias.Location = new System.Drawing.Point(-2, 228);
-            this.btnIncidencias.Name = "btnIncidencias";
-            this.btnIncidencias.Size = new System.Drawing.Size(152, 59);
-            this.btnIncidencias.TabIndex = 3;
-            this.btnIncidencias.Text = "Mis Incidencias";
-            this.btnIncidencias.UseVisualStyleBackColor = true;
-            // 
-            // btnGestionar
-            // 
-            this.btnGestionar.Location = new System.Drawing.Point(-2, 170);
-            this.btnGestionar.Name = "btnGestionar";
-            this.btnGestionar.Size = new System.Drawing.Size(152, 59);
-            this.btnGestionar.TabIndex = 2;
-            this.btnGestionar.Text = "Gestionar Incidencias";
-            this.btnGestionar.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -385,10 +330,6 @@ namespace AplicacionIncidenciasProyecto
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label lblSuperior;
         private System.Windows.Forms.Panel panel_lateral;
-        private System.Windows.Forms.Button btnAdmin;
-        private System.Windows.Forms.Button btnNotificaciones;
-        private System.Windows.Forms.Button btnIncidencias;
-        private System.Windows.Forms.Button btnGestionar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label3;
@@ -408,7 +349,6 @@ namespace AplicacionIncidenciasProyecto
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha_creacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn responsable;
-        private System.Windows.Forms.Button btnInventario;
         private System.Windows.Forms.Label label4;
     }
 }
