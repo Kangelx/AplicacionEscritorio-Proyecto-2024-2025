@@ -203,7 +203,7 @@ namespace AplicacionIncidenciasProyecto
             this.groupBox1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(58, 106);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(812, 241);
+            this.groupBox1.Size = new System.Drawing.Size(889, 241);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Incidencia";
@@ -355,7 +355,7 @@ namespace AplicacionIncidenciasProyecto
             // button4
             // 
             this.button4.AutoSize = true;
-            this.button4.Location = new System.Drawing.Point(882, 262);
+            this.button4.Location = new System.Drawing.Point(981, 274);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(97, 30);
             this.button4.TabIndex = 21;
@@ -366,7 +366,7 @@ namespace AplicacionIncidenciasProyecto
             // button5
             // 
             this.button5.AutoSize = true;
-            this.button5.Location = new System.Drawing.Point(882, 305);
+            this.button5.Location = new System.Drawing.Point(981, 317);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(98, 30);
             this.button5.TabIndex = 22;
@@ -380,7 +380,7 @@ namespace AplicacionIncidenciasProyecto
             this.groupBox2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(58, 353);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(812, 174);
+            this.groupBox2.Size = new System.Drawing.Size(732, 174);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Comentarios";
@@ -390,7 +390,7 @@ namespace AplicacionIncidenciasProyecto
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 32);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(788, 133);
+            this.dataGridView1.Size = new System.Drawing.Size(710, 133);
             this.dataGridView1.TabIndex = 0;
             // 
             // VerIncidenciaProfesor
