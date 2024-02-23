@@ -1,7 +1,7 @@
 ﻿
-namespace AplicacionIncidenciasProyecto.Profesor
+namespace AplicacionIncidenciasProyecto.Administrador
 {
-    partial class PerfilProfesor
+    partial class VisualizarPerfil
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,8 @@ namespace AplicacionIncidenciasProyecto.Profesor
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerfilProfesor));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisualizarPerfil));
             this.btnCancel = new System.Windows.Forms.Button();
-            this.imgListIconos = new System.Windows.Forms.ImageList(this.components);
             this.btnAdd = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -64,15 +63,16 @@ namespace AplicacionIncidenciasProyecto.Profesor
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.lblEmpresa = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.LogosCuadrados = new System.Windows.Forms.ImageList(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.lblSuperior = new System.Windows.Forms.Label();
-            this.txtUser = new System.Windows.Forms.TextBox();
+            this.imgListIconos = new System.Windows.Forms.ImageList(this.components);
+            this.LogosCuadrados = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -82,36 +82,20 @@ namespace AplicacionIncidenciasProyecto.Profesor
             // 
             this.btnCancel.ImageKey = "cross.png";
             this.btnCancel.ImageList = this.imgListIconos;
-            this.btnCancel.Location = new System.Drawing.Point(847, 336);
+            this.btnCancel.Location = new System.Drawing.Point(847, 347);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(42, 37);
-            this.btnCancel.TabIndex = 42;
+            this.btnCancel.TabIndex = 46;
             this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // imgListIconos
-            // 
-            this.imgListIconos.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgListIconos.ImageStream")));
-            this.imgListIconos.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgListIconos.Images.SetKeyName(0, "apagado.png");
-            this.imgListIconos.Images.SetKeyName(1, "notificacion.png");
-            this.imgListIconos.Images.SetKeyName(2, "casa.png");
-            this.imgListIconos.Images.SetKeyName(3, "lupa.png");
-            this.imgListIconos.Images.SetKeyName(4, "añadir.png");
-            this.imgListIconos.Images.SetKeyName(5, "user.png");
-            this.imgListIconos.Images.SetKeyName(6, "volver.png");
-            this.imgListIconos.Images.SetKeyName(7, "admin.png");
-            this.imgListIconos.Images.SetKeyName(8, "refresh.png");
-            this.imgListIconos.Images.SetKeyName(9, "cross.png");
-            this.imgListIconos.Images.SetKeyName(10, "check.png");
             // 
             // btnAdd
             // 
             this.btnAdd.ImageKey = "check.png";
             this.btnAdd.ImageList = this.imgListIconos;
-            this.btnAdd.Location = new System.Drawing.Point(847, 293);
+            this.btnAdd.Location = new System.Drawing.Point(847, 304);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(42, 37);
-            this.btnAdd.TabIndex = 41;
+            this.btnAdd.TabIndex = 45;
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -141,10 +125,10 @@ namespace AplicacionIncidenciasProyecto.Profesor
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(62, 105);
+            this.groupBox1.Location = new System.Drawing.Point(62, 116);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(739, 449);
-            this.groupBox1.TabIndex = 40;
+            this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Personales";
             // 
@@ -449,7 +433,15 @@ namespace AplicacionIncidenciasProyecto.Profesor
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1119, 81);
-            this.panel2.TabIndex = 39;
+            this.panel2.TabIndex = 43;
+            // 
+            // txtUser
+            // 
+            this.txtUser.Location = new System.Drawing.Point(943, 31);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.ReadOnly = true;
+            this.txtUser.Size = new System.Drawing.Size(84, 20);
+            this.txtUser.TabIndex = 21;
             // 
             // lblEmpresa
             // 
@@ -468,12 +460,6 @@ namespace AplicacionIncidenciasProyecto.Profesor
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 75);
             this.label1.TabIndex = 2;
-            // 
-            // LogosCuadrados
-            // 
-            this.LogosCuadrados.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("LogosCuadrados.ImageStream")));
-            this.LogosCuadrados.TransparentColor = System.Drawing.Color.Transparent;
-            this.LogosCuadrados.Images.SetKeyName(0, "AlpacApp Incidents.png");
             // 
             // label3
             // 
@@ -530,15 +516,29 @@ namespace AplicacionIncidenciasProyecto.Profesor
             this.lblSuperior.TabIndex = 0;
             this.lblSuperior.Text = "IES Miguel Herrero ";
             // 
-            // txtUser
+            // imgListIconos
             // 
-            this.txtUser.Location = new System.Drawing.Point(943, 31);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.ReadOnly = true;
-            this.txtUser.Size = new System.Drawing.Size(84, 20);
-            this.txtUser.TabIndex = 21;
+            this.imgListIconos.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgListIconos.ImageStream")));
+            this.imgListIconos.TransparentColor = System.Drawing.Color.Transparent;
+            this.imgListIconos.Images.SetKeyName(0, "apagado.png");
+            this.imgListIconos.Images.SetKeyName(1, "notificacion.png");
+            this.imgListIconos.Images.SetKeyName(2, "casa.png");
+            this.imgListIconos.Images.SetKeyName(3, "lupa.png");
+            this.imgListIconos.Images.SetKeyName(4, "añadir.png");
+            this.imgListIconos.Images.SetKeyName(5, "user.png");
+            this.imgListIconos.Images.SetKeyName(6, "volver.png");
+            this.imgListIconos.Images.SetKeyName(7, "admin.png");
+            this.imgListIconos.Images.SetKeyName(8, "refresh.png");
+            this.imgListIconos.Images.SetKeyName(9, "cross.png");
+            this.imgListIconos.Images.SetKeyName(10, "check.png");
             // 
-            // PerfilProfesor
+            // LogosCuadrados
+            // 
+            this.LogosCuadrados.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("LogosCuadrados.ImageStream")));
+            this.LogosCuadrados.TransparentColor = System.Drawing.Color.Transparent;
+            this.LogosCuadrados.Images.SetKeyName(0, "AlpacApp Incidents.png");
+            // 
+            // VisualizarPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -548,10 +548,10 @@ namespace AplicacionIncidenciasProyecto.Profesor
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PerfilProfesor";
-            this.Text = "PerfilProfesor";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PerfilProfesor_FormClosed);
-            this.Load += new System.EventHandler(this.PerfilProfesor_Load);
+            this.Name = "VisualizarPerfil";
+            this.Text = "VisualizarPerfil";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VisualizarPerfil_FormClosed);
+            this.Load += new System.EventHandler(this.VisualizarPerfil_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -596,15 +596,15 @@ namespace AplicacionIncidenciasProyecto.Profesor
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Label lblSuperior;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label lblEmpresa;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Label lblSuperior;
         private System.Windows.Forms.ImageList imgListIconos;
         private System.Windows.Forms.ImageList LogosCuadrados;
-        private System.Windows.Forms.TextBox txtUser;
     }
 }

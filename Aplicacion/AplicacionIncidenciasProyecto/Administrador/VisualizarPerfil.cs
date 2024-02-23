@@ -10,19 +10,29 @@ using System.Windows.Forms;
 
 namespace AplicacionIncidenciasProyecto.Administrador
 {
-    public partial class NotificacionesAdministrador : Form
+    public partial class VisualizarPerfil : Form
     {
-        FormularioAdministrador form1 = new FormularioAdministrador();
-        public NotificacionesAdministrador()
+        AdministrarPerfilesAdmin form1;
+        public VisualizarPerfil()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
         }
-        public NotificacionesAdministrador(FormularioAdministrador form)
+        public VisualizarPerfil(AdministrarPerfilesAdmin form)
         {
             form1 = form;
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+        }
+
+        private void VisualizarPerfil_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VisualizarPerfil_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            form1.Visible = true;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -34,12 +44,8 @@ namespace AplicacionIncidenciasProyecto.Administrador
         {
             this.Close();
         }
-
-        private void NotificacionesAdministrador_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            form1.Visible = true;
-        }
-
-        
     }
-}
+
+       
+    }
+

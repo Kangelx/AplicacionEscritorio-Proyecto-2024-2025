@@ -67,13 +67,7 @@ namespace AplicacionIncidenciasProyecto
             this.Visible = false;
         }
 
-        private void btnNotificaciones_Click(object sender, EventArgs e)
-        {
-            NotificacionesAdministrador formNotAdmin = new NotificacionesAdministrador(this);
-            formNotAdmin.Owner = this;
-            formNotAdmin.Show();
-            this.Visible = false;
-        }
+       
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
@@ -89,6 +83,11 @@ namespace AplicacionIncidenciasProyecto
             formInvent.Owner = this;
             formInvent.Show();
             this.Visible = false;
+        }
+
+        private void FormularioAdministrador_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -89,12 +89,6 @@
     <Compile Include="Administrador\InventarioAdmin.Designer.cs">
       <DependentUpon>InventarioAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administrador\NotificacionesAdministrador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administrador\NotificacionesAdministrador.Designer.cs">
-      <DependentUpon>NotificacionesAdministrador.cs</DependentUpon>
-    </Compile>
     <Compile Include="Administrador\Perfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +100,12 @@
     </Compile>
     <Compile Include="Administrador\VerIncidenciaAdministrador.Designer.cs">
       <DependentUpon>VerIncidenciaAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\VisualizarPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\VisualizarPerfil.Designer.cs">
+      <DependentUpon>VisualizarPerfil.cs</DependentUpon>
     </Compile>
     <Compile Include="ApiController\ApiService.cs" />
     <Compile Include="ApiController\IApiService.cs" />
@@ -155,12 +155,6 @@
     <Compile Include="Profesor\FormularioProfesor.Designer.cs">
       <DependentUpon>FormularioProfesor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Profesor\NotificacionesProfesor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Profesor\NotificacionesProfesor.Designer.cs">
-      <DependentUpon>NotificacionesProfesor.cs</DependentUpon>
-    </Compile>
     <Compile Include="Profesor\PerfilProfesor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,14 +184,14 @@
     <EmbeddedResource Include="Administrador\InventarioAdmin.resx">
       <DependentUpon>InventarioAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrador\NotificacionesAdministrador.resx">
-      <DependentUpon>NotificacionesAdministrador.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Administrador\Perfil.resx">
       <DependentUpon>Perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\VerIncidenciaAdministrador.resx">
       <DependentUpon>VerIncidenciaAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\VisualizarPerfil.resx">
+      <DependentUpon>VisualizarPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profesor\ComentarIncidenciaProfesor.resx">
       <DependentUpon>ComentarIncidenciaProfesor.cs</DependentUpon>
@@ -216,9 +210,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrador\inicioSesionAdmin.resx">
       <DependentUpon>inicioSesionAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Profesor\NotificacionesProfesor.resx">
-      <DependentUpon>NotificacionesProfesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profesor\PerfilProfesor.resx">
       <DependentUpon>PerfilProfesor.cs</DependentUpon>

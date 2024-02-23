@@ -40,5 +40,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
         {
             form1.Visible = true;
         }
+
+        
     }
 }

@@ -32,23 +32,18 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdministrarPerfilesAdmin));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblEmpresa = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LogosCuadrados = new System.Windows.Forms.ImageList(this.components);
+            this.label16 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.imgListIconos = new System.Windows.Forms.ImageList(this.components);
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.lblSuperior = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.LogosCuadrados = new System.Windows.Forms.ImageList(this.components);
+            this.lblSuperior = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblEmpresa = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +54,11 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.tlf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departamento_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.activo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -80,6 +80,41 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1119, 81);
             this.panel2.TabIndex = 26;
+            // 
+            // lblEmpresa
+            // 
+            this.lblEmpresa.Font = new System.Drawing.Font("Arial Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpresa.Location = new System.Drawing.Point(61, 24);
+            this.lblEmpresa.Name = "lblEmpresa";
+            this.lblEmpresa.Size = new System.Drawing.Size(100, 56);
+            this.lblEmpresa.TabIndex = 3;
+            this.lblEmpresa.Text = "AlpacApp Incidents";
+            // 
+            // label1
+            // 
+            this.label1.ImageIndex = 0;
+            this.label1.ImageList = this.LogosCuadrados;
+            this.label1.Location = new System.Drawing.Point(3, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 75);
+            this.label1.TabIndex = 2;
+            // 
+            // LogosCuadrados
+            // 
+            this.LogosCuadrados.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("LogosCuadrados.ImageStream")));
+            this.LogosCuadrados.TransparentColor = System.Drawing.Color.Transparent;
+            this.LogosCuadrados.Images.SetKeyName(0, "AlpacApp Incidents.png");
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label16.Location = new System.Drawing.Point(927, 19);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(100, 13);
+            this.label16.TabIndex = 17;
+            this.label16.Text = "Modo Administrador";
             // 
             // button1
             // 
@@ -107,40 +142,6 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.imgListIconos.Images.SetKeyName(7, "admin.png");
             this.imgListIconos.Images.SetKeyName(8, "refresh.png");
             // 
-            // btnCerrar
-            // 
-            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnCerrar.ImageIndex = 0;
-            this.btnCerrar.ImageList = this.imgListIconos;
-            this.btnCerrar.Location = new System.Drawing.Point(1073, 24);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(34, 31);
-            this.btnCerrar.TabIndex = 6;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // lblSuperior
-            // 
-            this.lblSuperior.AutoSize = true;
-            this.lblSuperior.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSuperior.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblSuperior.Location = new System.Drawing.Point(160, 37);
-            this.lblSuperior.Name = "lblSuperior";
-            this.lblSuperior.Size = new System.Drawing.Size(282, 34);
-            this.lblSuperior.TabIndex = 0;
-            this.lblSuperior.Text = "IES Miguel Herrero ";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label16.Location = new System.Drawing.Point(927, 19);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(100, 13);
-            this.label16.TabIndex = 17;
-            this.label16.Text = "Modo Administrador";
-            // 
             // txtUser
             // 
             this.txtUser.Location = new System.Drawing.Point(930, 35);
@@ -159,6 +160,18 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.label3.Size = new System.Drawing.Size(28, 23);
             this.label3.TabIndex = 14;
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnCerrar.ImageIndex = 0;
+            this.btnCerrar.ImageList = this.imgListIconos;
+            this.btnCerrar.Location = new System.Drawing.Point(1073, 24);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(34, 31);
+            this.btnCerrar.TabIndex = 6;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -169,11 +182,16 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 0;
             // 
-            // LogosCuadrados
+            // lblSuperior
             // 
-            this.LogosCuadrados.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("LogosCuadrados.ImageStream")));
-            this.LogosCuadrados.TransparentColor = System.Drawing.Color.Transparent;
-            this.LogosCuadrados.Images.SetKeyName(0, "AlpacApp Incidents.png");
+            this.lblSuperior.AutoSize = true;
+            this.lblSuperior.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSuperior.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblSuperior.Location = new System.Drawing.Point(160, 37);
+            this.lblSuperior.Name = "lblSuperior";
+            this.lblSuperior.Size = new System.Drawing.Size(282, 34);
+            this.lblSuperior.TabIndex = 0;
+            this.lblSuperior.Text = "IES Miguel Herrero ";
             // 
             // dataGridView1
             // 
@@ -193,73 +211,6 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(943, 393);
             this.dataGridView1.TabIndex = 27;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1024, 467);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Registrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(1024, 496);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(1024, 525);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 30;
-            this.button4.Text = "Seleccionar";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button5.ImageIndex = 8;
-            this.button5.ImageList = this.imgListIconos;
-            this.button5.Location = new System.Drawing.Point(1024, 168);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(34, 31);
-            this.button5.TabIndex = 9;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(57, 109);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 34);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Perfiles";
-            // 
-            // label1
-            // 
-            this.label1.ImageIndex = 0;
-            this.label1.ImageList = this.LogosCuadrados;
-            this.label1.Location = new System.Drawing.Point(3, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 75);
-            this.label1.TabIndex = 2;
-            // 
-            // lblEmpresa
-            // 
-            this.lblEmpresa.Font = new System.Drawing.Font("Arial Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpresa.Location = new System.Drawing.Point(61, 24);
-            this.lblEmpresa.Name = "lblEmpresa";
-            this.lblEmpresa.Size = new System.Drawing.Size(100, 56);
-            this.lblEmpresa.TabIndex = 3;
-            this.lblEmpresa.Text = "AlpacApp Incidents";
             // 
             // id
             // 
@@ -325,6 +276,56 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.activo.ReadOnly = true;
             this.activo.Width = 45;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1024, 434);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 28;
+            this.button2.Text = "Registrar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(1024, 492);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 29;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(1024, 463);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "Seleccionar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button5.ImageIndex = 8;
+            this.button5.ImageList = this.imgListIconos;
+            this.button5.Location = new System.Drawing.Point(1024, 168);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(34, 31);
+            this.button5.TabIndex = 9;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(57, 109);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(119, 34);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Perfiles";
+            // 
             // AdministrarPerfilesAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -341,7 +342,6 @@ namespace AplicacionIncidenciasProyecto.Administrador
             this.Name = "AdministrarPerfilesAdmin";
             this.Text = "AdministrarPerfiles";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdministrarPerfilesAdmin_FormClosed);
-            
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

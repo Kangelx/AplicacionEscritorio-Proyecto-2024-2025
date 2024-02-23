@@ -38,7 +38,6 @@
             this.lblSuperior = new System.Windows.Forms.Label();
             this.panel_lateral = new System.Windows.Forms.Panel();
             this.btnAdmin = new System.Windows.Forms.Button();
-            this.btnNotificaciones = new System.Windows.Forms.Button();
             this.btnIncidencias = new System.Windows.Forms.Button();
             this.btnGestionar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -151,7 +150,6 @@
             this.panel_lateral.BackColor = System.Drawing.Color.Moccasin;
             this.panel_lateral.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel_lateral.Controls.Add(this.btnAdmin);
-            this.panel_lateral.Controls.Add(this.btnNotificaciones);
             this.panel_lateral.Controls.Add(this.btnIncidencias);
             this.panel_lateral.Controls.Add(this.btnGestionar);
             this.panel_lateral.Controls.Add(this.panel3);
@@ -164,23 +162,13 @@
             // 
             // btnAdmin
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(-2, 344);
+            this.btnAdmin.Location = new System.Drawing.Point(-2, 286);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(152, 59);
             this.btnAdmin.TabIndex = 14;
             this.btnAdmin.Text = "Administrar Perfil";
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
-            // 
-            // btnNotificaciones
-            // 
-            this.btnNotificaciones.Location = new System.Drawing.Point(-2, 286);
-            this.btnNotificaciones.Name = "btnNotificaciones";
-            this.btnNotificaciones.Size = new System.Drawing.Size(152, 59);
-            this.btnNotificaciones.TabIndex = 15;
-            this.btnNotificaciones.Text = "Notificaciones";
-            this.btnNotificaciones.UseVisualStyleBackColor = true;
-            this.btnNotificaciones.Click += new System.EventHandler(this.btnNotificaciones_Click);
             // 
             // btnIncidencias
             // 
@@ -498,7 +486,6 @@
         private System.Windows.Forms.GroupBox grpIncidencia;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAdmin;
-        private System.Windows.Forms.Button btnNotificaciones;
         private System.Windows.Forms.Button btnIncidencias;
         private System.Windows.Forms.Button btnGestionar;
         private System.Windows.Forms.Label label1;

@@ -95,7 +95,7 @@ namespace AplicacionIncidenciasProyecto
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(915, 36);
+            this.txtUser.Location = new System.Drawing.Point(927, 31);
             this.txtUser.Name = "txtUser";
             this.txtUser.ReadOnly = true;
             this.txtUser.Size = new System.Drawing.Size(84, 20);
@@ -106,7 +106,7 @@ namespace AplicacionIncidenciasProyecto
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ImageIndex = 5;
             this.label3.ImageList = this.imgListIconos;
-            this.label3.Location = new System.Drawing.Point(880, 34);
+            this.label3.Location = new System.Drawing.Point(892, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 23);
             this.label3.TabIndex = 14;
@@ -156,7 +156,7 @@ namespace AplicacionIncidenciasProyecto
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ImageIndex = 5;
-            this.label2.Location = new System.Drawing.Point(888, 21);
+            this.label2.Location = new System.Drawing.Point(900, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 0;

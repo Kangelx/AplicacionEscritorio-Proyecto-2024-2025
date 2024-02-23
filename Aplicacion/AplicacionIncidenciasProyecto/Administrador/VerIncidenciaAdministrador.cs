@@ -13,17 +13,27 @@ namespace AplicacionIncidenciasProyecto.Administrador
     public partial class VerIncidenciaAdministrador : Form
     {
         GestionarIncidenciasAdministrador formPadre;
+       
+        public VerIncidenciaAdministrador()
+        {
+            
+            InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+        }
         public VerIncidenciaAdministrador(GestionarIncidenciasAdministrador form)
         {
             formPadre = form;
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
         }
+        
 
         
         private void VerIncidenciaAdministrador_FormClosed(object sender, FormClosedEventArgs e)
         {
+            
             formPadre.Visible = true;
+           
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -35,5 +45,7 @@ namespace AplicacionIncidenciasProyecto.Administrador
         {
             this.Close();
         }
+
+        
     }
 }

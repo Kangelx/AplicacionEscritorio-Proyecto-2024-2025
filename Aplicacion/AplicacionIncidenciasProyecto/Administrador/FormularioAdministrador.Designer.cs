@@ -31,9 +31,9 @@ namespace AplicacionIncidenciasProyecto
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioAdministrador));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.imgListIconos = new System.Windows.Forms.ImageList(this.components);
@@ -47,7 +47,6 @@ namespace AplicacionIncidenciasProyecto
             this.panel_lateral = new System.Windows.Forms.Panel();
             this.btnInventario = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
-            this.btnNotificaciones = new System.Windows.Forms.Button();
             this.btnIncidencias = new System.Windows.Forms.Button();
             this.btnGestionar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -189,7 +188,6 @@ namespace AplicacionIncidenciasProyecto
             this.panel_lateral.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel_lateral.Controls.Add(this.btnInventario);
             this.panel_lateral.Controls.Add(this.btnAdmin);
-            this.panel_lateral.Controls.Add(this.btnNotificaciones);
             this.panel_lateral.Controls.Add(this.btnIncidencias);
             this.panel_lateral.Controls.Add(this.btnGestionar);
             this.panel_lateral.Controls.Add(this.panel3);
@@ -202,7 +200,7 @@ namespace AplicacionIncidenciasProyecto
             // 
             // btnInventario
             // 
-            this.btnInventario.Location = new System.Drawing.Point(-2, 402);
+            this.btnInventario.Location = new System.Drawing.Point(-2, 344);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(152, 59);
             this.btnInventario.TabIndex = 12;
@@ -212,23 +210,13 @@ namespace AplicacionIncidenciasProyecto
             // 
             // btnAdmin
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(-2, 344);
+            this.btnAdmin.Location = new System.Drawing.Point(-2, 286);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(152, 59);
             this.btnAdmin.TabIndex = 11;
             this.btnAdmin.Text = "Administrar Perfil";
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
-            // 
-            // btnNotificaciones
-            // 
-            this.btnNotificaciones.Location = new System.Drawing.Point(-2, 286);
-            this.btnNotificaciones.Name = "btnNotificaciones";
-            this.btnNotificaciones.Size = new System.Drawing.Size(152, 59);
-            this.btnNotificaciones.TabIndex = 11;
-            this.btnNotificaciones.Text = "Notificaciones";
-            this.btnNotificaciones.UseVisualStyleBackColor = true;
-            this.btnNotificaciones.Click += new System.EventHandler(this.btnNotificaciones_Click);
             // 
             // btnIncidencias
             // 
@@ -304,16 +292,16 @@ namespace AplicacionIncidenciasProyecto
             // 
             // chartDatos
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartDatos.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartDatos.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chartDatos.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartDatos.Legends.Add(legend2);
             this.chartDatos.Location = new System.Drawing.Point(177, 157);
             this.chartDatos.Name = "chartDatos";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartDatos.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartDatos.Series.Add(series2);
             this.chartDatos.Size = new System.Drawing.Size(244, 118);
             this.chartDatos.TabIndex = 11;
             this.chartDatos.Text = "chart1";
@@ -417,7 +405,7 @@ namespace AplicacionIncidenciasProyecto
             this.Name = "FormularioAdministrador";
             this.Text = "FormularioAdministrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormularioAdministrador_FormClosed);
-            
+            this.Load += new System.EventHandler(this.FormularioAdministrador_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.anel_superiorIzq.ResumeLayout(false);
@@ -448,7 +436,6 @@ namespace AplicacionIncidenciasProyecto
         private System.Windows.Forms.Button btnGestionar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnAdmin;
-        private System.Windows.Forms.Button btnNotificaciones;
         private System.Windows.Forms.Button btnIncidencias;
         private System.Windows.Forms.Button btnInventario;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartDatos;

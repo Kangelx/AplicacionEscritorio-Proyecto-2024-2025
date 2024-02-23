@@ -48,5 +48,13 @@ namespace AplicacionIncidenciasProyecto.Administrador
             formPerfil.Show();
             this.Visible = false;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            VisualizarPerfil formPerfil = new VisualizarPerfil();
+            formPerfil.Owner = this;
+            formPerfil.Show();
+            this.Visible = false;
+        }
     }
 }

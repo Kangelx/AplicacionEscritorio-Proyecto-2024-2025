@@ -86,15 +86,7 @@ namespace AplicacionIncidenciasProyecto
             this.Visible = false;
         }
 
-        private void btnNotificaciones_Click(object sender, EventArgs e)
-        {
-            NotificacionesProfesor formNotificaciones = new NotificacionesProfesor(this);
-            formNotificaciones.Owner = this;
-            formNotificaciones.Show();
-            this.Visible = false;
-
-        }
-
+       
         private void FormularioProfesor_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (Application.OpenForms.Count == 0)
