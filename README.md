@@ -1,4 +1,5 @@
-# PROYECTO INTERMODULAR EQUIPO 3: Diseño de Interfaces - Aplicación de Escritorio
+# # AlpacApp Incidents
+## PROYECTO INTERMODULAR EQUIPO 3: Diseño de Interfaces - Aplicación de Escritorio
 ## [Página Principal](https://github.com/Kangelx/Proyecto2024-2025/blob/main/README.md)
 </head>
   <body>
@@ -9,10 +10,11 @@
 
 <h3 id="indice">INDICE</h3>
     <ul>
-      <li><a href="#objetivos">OBJETIVOS</a></li>
-      <li><a href="#estructura">ESTRUCTURA DEL PROGRAMA</a></li>
+      <li><a href="#objetivos">Introducción</a></li>
+      <li><a href="#estructura">Estructura del programa</a></li>
       <li><a href="#front">FRONT</a></li>
       <li><a href="#back">BACK</a></li>
+      <li><a href="#autores">Autores del proyecto</a></li>
       </ul>
     
     
@@ -96,7 +98,22 @@
 ## Conexión a la API y métodos CRUD
 
 
+---
+<div id='autores'/>
+## **Autores del proyecto**
+*Aplicación móvil*
+:iphone: Diego Corominas Gómez
+:llama: Oana Irina Cutitaru Ciobanu
 
+*Aplicación de escritorio*
+:computer: Paula Díaz Santos
+:desktop_computer: Ángel García García
+
+*Python*
+:snake: Rubén Cortés Muñoz
+
+*Base de datos*
+:file_folder: Pablo Sainz Luque
 </body>
 </html>
 
