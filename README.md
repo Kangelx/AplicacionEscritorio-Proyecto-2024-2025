@@ -100,19 +100,19 @@
 
 ---
 <div id='autores'/>
-## **Autores del proyecto**
-*Aplicación móvil*
+## Autores del proyecto
+###Aplicación móvil
 :iphone: Diego Corominas Gómez
 :llama: Oana Irina Cutitaru Ciobanu
 
-*Aplicación de escritorio*
+###Aplicación de escritorio
 :computer: Paula Díaz Santos
 :desktop_computer: Ángel García García
 
-*Python*
+###Python
 :snake: Rubén Cortés Muñoz
 
-*Base de datos*
+###Base de datos*
 :file_folder: Pablo Sainz Luque
 </body>
 </html>
