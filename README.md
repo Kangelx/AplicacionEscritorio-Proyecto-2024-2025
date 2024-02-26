@@ -103,18 +103,18 @@
   
 ## Autores del proyecto
 ### Aplicación móvil
-:iphone: Diego Corominas Gómez
-:llama: Oana Irina Cutitaru Ciobanu
+📱: Diego Corominas Gómez
+🦙: Oana Irina Cutitaru Ciobanu
 
 ### Aplicación de escritorio
-:computer: Paula Díaz Santos
-:desktop_computer: Ángel García García
+🎧: Paula Díaz Santos
+🖥️: Ángel García García
 
 ### Python
-:snake: Rubén Cortés Muñoz
+🐍: Rubén Cortés Muñoz
 
-### Base de datos*
-:file_folder: Pablo Sainz Luque
+### Base de datos
+📁: Pablo Sainz Luque
 </body>
 </html>
 
