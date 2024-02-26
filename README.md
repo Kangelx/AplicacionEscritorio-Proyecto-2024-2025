@@ -7,16 +7,13 @@
    
 
 <h3 id="indice">INDICE</h3>
-<ul>
-  <li><a href="#proyecto">DI</a>
     <ul>
-      <li><a href="#indice">INDICE</a></li>
       <li><a href="#objetivos">OBJETIVOS</a></li>
       <li><a href="#estructura">ESTRUCTURA DEL PROGRAMA</a></li>
       <li><a href="#front">FRONT</a></li>
       <li><a href="#back">BACK</a></li>
       </ul>
-    </li>
+    
     
 
 <div id='objetivos'/>
