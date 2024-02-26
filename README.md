@@ -1,8 +1,8 @@
-# MARKDOWN DI: CREACIÓN INTERFAZ GRÁFICA
+# PROYECTO INTERMODULAR EQUIPO 3:Diseño de Interfaces - Aplicación de Escritorio
 </head>
   <body>
     <header class="page-header" role="banner">
-      <h1 class="project-name">PROYECTO INTERMODULAR EQUIPO 3:Diseño de Interfaces - Aplicación de Escritorio</h1>
+      <h1 class="project-name">MARKDOWN DI: CREACIÓN INTERFAZ GRÁFICA</h1>
     </header>
    
 
