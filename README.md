@@ -30,15 +30,15 @@
 
 ## Estructura de las interfaces 
 
- ## Actividades de Profesor
+ ### Actividades de Profesor
 
-### Acciones sobre una incidencia:
+#### Acciones sobre una incidencia:
 - **Modificar o eliminar:** Solo antes de que esté en proceso.
 - **Comentar:** Sin que esté finalizada.
 - **Recibir notificaciones:** Incidencias abiertas por su usuario.
 - **Cerrar:** Una vez revisada y considerada como solucionada.
 
-### Registro de una nueva incidencia:
+#### Registro de una nueva incidencia:
 - **Datos requeridos:**
   - Usuario que pone la incidencia.
   - Tipo de incidencia (Equipos, Cuentas, Wifi, Internet, Software).
@@ -50,22 +50,22 @@
   - Fecha y hora de registro.
 - **Notificación:** El usuario recibe el ID asignado a la incidencia después de abrir/crerla.
 
-### Visualización de incidencias:
+#### Visualización de incidencias:
 - **Filtrado:** Por diferentes campos.
 
-### Información de incidencias:
+#### Información de incidencias:
 - **Incidencias creadas:** Visualización de las incidencias que ha creado.
 
-## Actividades de Administrador
+### Actividades de Administrador
 
-### Acciones sobre una incidencia:
+#### Acciones sobre una incidencia:
 - **Ver, hacerse responsable, asignar a otro, comentar, cambiar estado, cambiar prioridad, resolver, eliminar, modificar, cerrar, abrir:** Sobre una incidencia.
 - **Enviar mensaje:** Al usuario que la ha creado y a la cuenta de TIC cuando se modifique su estado.
 
-### Visualización de incidencias:
+#### Visualización de incidencias:
 - **Filtrado:** Según varios criterios.
 
-### Generación de informes:
+#### Generación de informes:
 - **Formatos:** Excel y PDF.
 - **Información sobre:**
   - Incidencias resueltas por cada administrador.
@@ -76,7 +76,7 @@
   - Tiempo dedicado por cada administrador.
   - Lista de incidencias asignadas a cada administrador.
 
-### Exportación de contenido:
+#### Exportación de contenido:
 - **Formatos:** Excel y PDF.
 - **Contenido:** De una incidencia.
 
