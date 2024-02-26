@@ -1,4 +1,4 @@
-# PROYECTO INTERMODULAR EQUIPO 3:Diseño de Interfaces - Aplicación de Escritorio
+# PROYECTO INTERMODULAR EQUIPO 3: Diseño de Interfaces - Aplicación de Escritorio
 ## [Página Principal](https://github.com/Kangelx/Proyecto2024-2025/blob/main/README.md)
 </head>
   <body>
