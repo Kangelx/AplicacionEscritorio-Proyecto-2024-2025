@@ -1,4 +1,5 @@
-#AlpacApp Incidents
+# AlpacApp Incidents
+
 ![AlpacApp Incidents](https://github.com/Kangelx/AplicacionEscritorio-Proyecto-2024-2025/assets/119075863/a4aa8239-2506-41d1-811d-c8497afe4d28)
 
 ## PROYECTO INTERMODULAR EQUIPO 3: Diseño de Interfaces - Aplicación de Escritorio
